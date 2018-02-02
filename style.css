@@ -1,0 +1,160 @@
+html, body, div { margin: 0;	padding: 0; }
+html { font: 14px/20px Tahoma,sans-serif; color: #000; background: #fff; }
+
+h1 { font: 30px/1.2 Arial,sans-serif; margin: 0.5em 0 0.5em; color: #404040; }
+h1.lifted-up { margin-top: -1.45em; margin-left: -0.07em; }
+h2 { font: 18px/1.2 Arial,sans-serif; margin: 2em 0 0.5em; color: #404040; }
+p { margin: 0.5em 0 1em; }
+a {  }
+
+dfn, em { font-style: italic; font-family: "Trebuchet MS", sans-serif; padding-right: 0.1em; }
+    dfn.o-strong { font-style: normal; font-weight: bold; font-family: inherit;  }
+strong { color: #333; }
+code, .b-code-block { padding: 3px; background-color: #eaeaea; color: #000; border-radius: 3px;
+    font-family: "Consolas", monospace; }
+pre > code { display: block;  }
+pre {   word-wrap: break-word; white-space: pre-wrap; } 
+
+li { margin-top: 0.4em;}
+
+.nowrap { white-space: nowrap; }
+
+.cf:before, .cf:after { content: " "; display: table;}
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+.spoiler { background: #e0e0ff; color: #e0e0ff; padding: 0.15em 3px; border-radius: 3px;}
+    /* Hide links and code blocks */
+    .spoiler > * { visibility: hidden; } 
+.spoiler:hover { color: inherit; }
+    .spoiler:hover > * { visibility: inherit; }
+
+.vlist { list-style-type:none; padding-left: 0; margin: 0; }
+	.vlist li { padding: 0; margin: 0; }
+
+.l-content-wrap { float: left; width: 100%; margin-right: -100%; padding-bottom: 20px; }
+	.l-content { margin-left: 270px; max-width: 600px; padding-right: 150px; margin-top: 100px; }
+	
+.l-right-wrap {  }
+
+.l-sidebar { float: left; margin-left: 30px; width: 205px; margin-top: 100px; }
+.small-font { font: 12px/1.5 Tahoma,sans-serif; color: #505050; }
+
+.l-content img { border: 1px solid #b8b8b8; margin: 8px 0 8px -1px; }
+    .l-content .o-seamless { border: 0; margin-left: 0; }
+    .l-content .o-seamless-left { border: 0; margin-left: -10px; }
+    .l-content .o-img-right { float: right; border: 0; margin-right: -250px; }
+
+.l-sidebar .b-block { margin-top: 30px; }
+.l-sidebar .b-main-menu { margin-left: -13px; }
+
+.b-figure { display: inline-block; border: 1px solid #b8b8b8; margin: 8px 0 8px -1px; 
+    position: relative; }
+.b-figure.o-figure-seamless { margin-left: 0; border: 0 none; }
+.b-figure.o-figure-seamless .b-figure__caption { border-width: 1px; }
+    .b-figure img { vertical-align: top; margin: 0; border: 0 none; }
+    .b-figure__caption { position: absolute; right: 0; bottom: 0; 
+        background: #ffffe8; padding: 2px 8px; border: 1px solid #b8b8b8; border-width: 1px 0 0 1px;
+        margin: 0; font-weight: normal; font-style: normal; color: #666; font-size: 12px; }
+    .b-figure:hover .b-figure__caption { opacity: 0.3; }
+
+.b-main-menu { margin-left: 0; }
+.b-main-menu li { font-family: Arial,sans-serif; font-size: 14px; line-height: 1.2; padding: 8px 0px 8px 13px; }
+    .b-main-menu .b-menu-l1, .b-main-menu .b-menu-l2 { margin: -8px 0 -8px -13px; }
+    .b-main-menu .b-menu-l1 li { padding: 10px 0px 9px 20px; }
+    .b-main-menu .b-menu-l2 li { padding: 10px 0px 9px 36px; }
+.b-main-menu li.separated { margin-top: 14px; }
+
+.b-main-menu .b-menu-l2 li { font-size: 13px; line-height: 1.2; }
+
+.b-main-menu li.active { position:relative; z-index: 0; }
+.b-main-menu li.active .dec-l { position: absolute; z-index: -1; left: 0; right: 0; top: 0; height: 33px; 
+	background: url(./i/php-menu-pane.png) no-repeat -20px 0;}
+.b-main-menu li.active .dec-r { position: absolute; z-index: -1; left: 100%; top: 0; width: 12px; height: 33px; 
+	background: url(./i/php-menu-pane.png) no-repeat 0 0; }
+
+
+
+.b-epilog { clear: both; padding-top: 20px; font-size: 12px; line-height: 1.4; margin-right: -150px; }
+.b-teaser { font: italic 16px/1.3 "Trebuchet MS", sans-serif; color: #777; word-spacing: 1px; }
+
+.b-problem { font-family: "Trebuchet MS", sans-serif; font-style: italic; 
+    margin: 0.5em -1em; padding: 0.5em 1em; background-color: #e8e8ff; }
+/* Примеры кода внутри задачи */
+.b-problem pre, .b-problem samp, .b-problem code { font-style: normal; }
+
+.b-self-check { margin: 0.5em -1em; padding: 0.25em 1em; 
+    border-left: 3px solid #d8d8ef; }
+.b-self-check:before { content: 'Проверь себя'; margin-bottom: 6px;
+    color: #449; font-size: 12px; display: block; }
+
+.b-next-page { float: right; width: auto; max-width: 50%; margin-right: -150px; }
+    .b-next-page .m-label { color: #999; font-size: 75%; display: block; }
+    .b-next-page .m-link { font-size: 200%; }
+
+.b-side-note { float: right; margin-right: -250px; width: 200px; font-size: 12px; }
+    .b-side-note p:first-child { margin-top: 0; }
+.b-sidebar { float: right; clear: right; margin-right: -250px; width: 200px; } 
+
+table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+    table tr th { text-align: left; font-weight: normal; border-bottom: 1px solid #ccc; 
+        font-size: 85%; line-height: 1.3; color: #999; }
+    table td, table th { border: 0; vertical-align: top; padding: 3px; }
+.o-table-wide { margin-right: -150px; width: auto; }
+
+.b-code-example .col1 { width:50%; }
+
+.b-hide { display: none; }
+.b-hide-header { display: none; }
+
+.b-ruler-50 { margin: 25px auto; width: 250px; border-top: 1px solid #ccccff; }
+
+.b-3-columns { margin-right: -200px; white-space: nowrap; }
+    .b-3-columns .b-column { display: inline-block; vertical-align: top; width: 250px; margin-right: 3%; white-space: normal; }
+    .b-3-columns .b-column-down { vertical-align: bottom; }
+
+.span-colored-box { display: inline-block; vertical-align: middle; width: 0.75em; height: 0.75em; border: 1px solid #aaa; }
+
+.mt-1 { margin-top: 1em; }
+.mt-2 { margin-top: 2em; }
+.mt-3 { margin-top: 3em; }
+.mt-5 { margin-top: 5em; }
+
+
+/* HTML entities */
+.b-entity-list { margin: 0 -250px 0 0; padding: 0; list-style-type: none; }
+    .b-entity-list>li { display: inline-block; vertical-align: top; margin: 0; padding: 0; 
+        margin-right: 15px; padding-bottom: 5px; }
+    .b-entity-list .top { text-align: center; font-size: 36px; line-height: 1.2; height: 1.2em; padding: 3px; }
+    .b-entity-list code { font-size: 85%; }
+    .b-entity-list .comment { display: block; max-width: 4em; font-size: 75%; line-height: 1.2; 
+        padding-top: 3px; color: #999; }
+
+.b-html-snippet pre { margin: 1px 0 0; }
+.b-code-entity { color: #901020; font-weight: bold; }
+.b-code-tag { color: #d04050; }
+.b-code-comment { color: #777; }
+.b-code-cdata { color: #777; }
+
+.b-number-in-circle { float: left; height: 68px; width: 68px; margin: 2px 8px 2px 2px; 
+    text-align: center; font-size: 45px; line-height: 63px; color: #fae9f5;
+    background: url("i/deco/round-bg-rose.png") no-repeat 50% 50%; }
+
+.b-tag-description { display: inline-block;  width: 250px; border: 1px solid #ccc;  }
+
+.with-js .b-details .b-details__summary { display: inline; font-size: 100%; font-weight: normal; 
+    color: #0000cc; border-bottom: 1px dashed #0000cc; cursor: pointer; 
+    -moz-user-select: none; -o-user-select: none; -webkit-user-select: none; user-select: none;  }
+.with-js .b-details .b-details__content { display: none; padding-left: 20px; }
+.with-js .b-details.o-expanded .b-details__content { display: block; }
+
+/* fix narod compat CSS mode */
+.b-eval__source, .b-eval__result { font-size: 14px; line-height: 20px; }
+
+.b-mirror-notice { float: right; margin-right: -250px; width: 200px; margin-top: 15px; 
+    font-size: 12px; margin-bottom: 15px; }
+/* временно */
+.b-highlighted-notice { float: right; clear: right; 
+    margin-right: -260px; width: 200px; 
+    margin-top: 15px; font-size: 12px; 
+    margin-bottom: 15px; background: #ffeaae; padding: 10px; }

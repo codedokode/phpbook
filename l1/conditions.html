@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Условия и игра в кубики — PHP с нуля</title>
+    <link rel="apple-touch-icon" href="../phpbook-favicon-128.png">
+        <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="../phpbook-favicon-128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="../phpbook-favicon-64.png" sizes="64x64">
+    <link href="../style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="l-content-wrap">
+        <div class="l-content">
+
+
+
+            <h1 class="lifted-up">Условия и игра в кубики</h1>
+    
+    <p>Давай теперь сделаем игру с 2 кубиками. Человек и ИИ (искуственный интеллект, то есть робот) кидают 
+        по 2 кубика, и тот, у кого сумма чисел больше, победил (если одинаковая — победила дружба). То есть, 
+        у человека выпало 6 + 6, это 12, у робота выпало 1 + 3 = 4, человек победил.</p>
+
+    <p>Если у человека и ИИ выпали даблы (одинаковые числа на обоих кубиках), то это 
+        большая удача, ничья и смысла играть дальше нет.</p>
+
+    <p>Чтобы определять, кто победил, и проверять эти условия, мы используем оператор <code>if</code>. 
+        Этот оператор (если ... то, иначе ...) проверяет условие, 
+        и в зависимости от того, верно оно или нет, выполянет или не выполняет один из 
+        нескольких блоков кода. Выглядит он так (смотри картинку):</p>
+
+<p><pre>
+if (условие1) {   
+    /* если условие1 соблюдается, то выполнить действие1 */
+    действие1;
+} elseif (условие2) {
+    /* иначе же (если условие1 ложно), если условие2 истинно, 
+        то выполнить действие2 */
+    действие2;
+} elseif (условие3) {
+    /* иначе же, если условие3 истинно, то выполнить действие3 */
+    действие3;
+} else {
+    действие4, выполнится если ни одно из условий не соблюдается;
+}
+</pre></p>
+
+<p>Или так:</p>
+
+<p><pre>
+if (условие1) {
+    действие-если-условие-верно;
+    еще-одно-действие;
+} else {
+    действие-если-условие-неверно;
+    другое-действие;
+}
+</pre></p>
+
+    <p>Или даже так:</p>
+
+<p><pre>
+if (условие) {
+    действие, если условие верно;
+}
+</pre><p>
+
+<p>Блоки <code>elseif</code> (иначе, если) и <code>else</code> (иначе) могут 
+    отсутствовать. Выполниться может только один из
+    нескольких блоков.</p>
+
+<p>В условии можно использовать выражение с переменными, числами, скобками и знаками &lt;,>,==,!=,>=,&lt;= 
+    (меньше, больше, равно, не равно, больше или равно, меньше или равно).</p> 
+
+<p>Вот пример программы, которая смотрит на число и пишет, положительное оно, 
+    отрицательно или же равно нулю:</p>    
+
+<p><pre>
+$number = 5;
+
+if ($number > 0) {
+    echo "Число $number положительное.\n";
+} elseif ($number == 0) {
+    echo "Число равно нулю.\n";
+} else {
+    echo "Число $number отрицательное.\n";    
+}
+</pre></p>
+
+<p> Обрати внимание на круглые скобки 
+    <code>()</code>, в которые заключено условие: они обязательны, без исключений. Обрати внимание на фигурные 
+    скобки <code>{}</code>, которые стоят вокруг блока с действиями — они обязательны 
+    <span class="spoiler">по идее, PHP разрешает не ставить фигурные скобки, если действие состоит из единственной
+    команды, но это запутывает код и делает его менее читаемым, потому скобки надо ставить всегда, а их отсутствие
+    я буду считать ошибкой</span>. Обрати
+    внимание, что содержимое блоков сдвинуто вправо с помощью 4 пробелов 
+    в начале — это тоже важно для читаемости. Код должен оформляться по 
+    стандартам, а не как попало.</p>
+
+<p><strong>Равно должно быть двойным, а не одинарным, иначе это будет не сравнение, а присваивание переменной 
+    и программа будет работать неверно!</strong></p>
+
+<p><pre>
+$a = 1; /* переменной $a присваивается значение 1 */
+$a == 1; /* проверка, равно ли $a единице? */
+</pre></p>
+
+    <img src="../i/php-noob-12.png" alt="">
+    
+    <p>В общем, почитав теорию и посмотрев картинку, ты можешь доделать эту мегаигру. Приступаем.</p>
+
+    <div class="h-php-problem" id="problem-dice-with-robot">
+        <h2 class="p-name">Игра в кубики</h2>
+    
+        <div class="e-description">
+            <div class="b-problem">
+                <p>W4.1 Допиши игру с кубиками</p>
+            </div>
+            
+            <img src="../i/php-noob-13.png" alt="">
+        </div>
+    </div>
+    
+    <p>Сделал? Молодец, делай следующий урок.</p>
+    <!-- p>Жду ответов в виде <strong>ссылок</strong> на код (копипастить не надо) и скриншотов с
+         результатами, <span class="spoiler">няши</span>! </p -->
+</p>
+
+
+
+    <div class="b-next-page">
+    <span class="m-label">дальше:</span>
+    <span class="m-link"><a href="../l1/loops.html">Циклы и айфон в кредит</a>&nbsp;&rarr;</span>
+</div>    <div class="b-epilog">
+        <p>-----</p>
+                    <p><strong>Куда вводить код? Что надо скачать?</strong> Читай <a href="../">первый урок</a>.</p>    
+                <p><strong>Есть вопросы?</strong> Задай гуглу или автору.</p>
+        <p><strong>Нравится урок?</strong> Лайкай, репости, приглашай друзей, пости котов и Канако,
+             шли добра, решай задачи, помогай новичкам! Кнопок для лайка нет, кто хочет зарепостить, всегда может сделать это ручками.</p>
+        <p><strong>Как связаться с автором?</strong> <span class="spoiler"> Я хочу переодеть его в платье
+         школьницы и жениться на нем.</span> Ящик codedokode (кот) gmail.com ждет ваших писем.  А
+         <span style="color: #009; text-decoration: underline; cursor: pointer;">вконтактик</span> и 
+            <span style="color: #009; text-decoration: underline; cursor: pointer;">фейсбучек</span> ждут ваших лайков.
+         Но ответ на банальные вопросы лучше искать в Гугле или на stackoverflow.</p>
+        <p><strong>Я решил задачку!!!</strong> Молодец, делай следующий урок</p>
+                    <p><strong>Ideone не работает!11</strong> Ну так открой Гугл и найди сайты 
+            вроде https://repl.it/languages/php , http://phptester.net/ , 
+            http://sandbox.onlinephpfunctions.com/ , 
+            http://codepad.org/ или http://www.runphponline.com/ . Не ленись.</p>
+        
+        <p><strong>Почему так много рекламы?</strong> Всю рекламу
+        на сайте ставит юкоз (бесплатный хостинг же), а не я.</p>
+        <p>На сайте установлена система Google Analytics (и еще несколько аналогичных систем от юкоза). Данные о твоем IP-адресе, посещаемых страницах, 
+        времени посещения отправляются в Google Corporation, США. Хочу знать, кто и зачем сюда заходит. Поверь, 
+        другие сайты делают точно так же. Все сайты пишут логи.</p>
+    </div>
+                    
+
+        </div>
+    </div>        
+    <div class="l-sidebar">
+
+        <ul class="b-main-menu vlist">
+                                                                                        <li>
+                                            <a href="../">Начало</a>
+                                    </li>
+                                                                                                
+                                                    <li><ul class="vlist b-menu-l1">
+                                                            <li>
+                                            <a href="../l1/variables.html">Переменные</a>
+                                    </li>
+                                                                                        <li class='active'>
+                                            <span>Условия и игра в кубики                            <ins class="dec-l"></ins><ins class="dec-r"></ins></span>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/loops.html">Циклы и айфон в кредит</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/arrays.html">Массивы и рулетка</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/strings.html">Строки, хакеры и шифровки</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/functions.html">Функции и новый айпад</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/regexp.html">Регулярные выражения</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/finals.html">Повторим?</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/mou-ikkai.html">Бонусные задачки</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/pasta.html">Пасты и ООП</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/reading-list.html">Учим сами</a>
+                                    </li>
+                                                                                                                            </ul></li>
+                                                            <li class='separated'>
+                                            <a href="../tsuzuke.html">Что делать дальше?</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../i-am-smart.html">Я у мамы умный</a>
+                                    </li>
+                                
+                    </ul>
+
+        <div class="b-block small-font">
+            <h2>Что это?</h2>
+            
+            <p>Это сайт, где собраны простые 
+                уроки по языку программирования
+                                PHP. 
+                                Даже если ты никогда
+                не слышал слова 
+                «программирование» и учишься
+                на филолога, ты можешь 
+                попробовать их сделать.
+                </p>
+
+            <p>Скачивать и устанавливать тоже
+                ничего не надо, делать уроки 
+                можно даже с айпада или 
+                ведроида.</p>
+        </div>
+
+            </div>
+
+    
+    
+    <script type="text/javascript">
+
+        var SCOPE_PAGE_LEVEL = 3;
+
+        window._gaq = window._gaq || [];
+        _gaq.push(['_setAccount', 'UA-34859509-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        
+        /* outbound link click tracking to check whether anyone uses those links */
+        (function() {
+            function startsWith(str, substr) {
+                return str.substr(0, substr.length) == substr;
+            }
+            
+            function addEvent(node, evt, fn) {
+                if (node.addEventListener) {
+                    node.addEventListener(evt, fn, false);
+                } else {
+                    node.attachEvent('on' + evt, fn);
+                }
+            }
+        
+            var links = document.getElementsByTagName('a');
+            var baseUrl = 'http://' + location.host;
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                
+                if (link.href != baseUrl && !startsWith(link.href, baseUrl + '/')) {
+                    // Is an external link
+                    addEvent(link, 'mousedown', function(ev) { 
+                        window._gaq = window._gaq || [];
+                        var e = ev || window.event;
+                        var link = e.target || e.srcElement;
+                        var text = link.innerText || link.textContent || 'no text';
+                        if (text.length > 20) {
+                            text = text.substr(0, 20) + '…';
+                        }
+                        var linkInfo = link.href + ' (' +  text + ')';
+                        window._gaq.push(['_trackEvent', 'flow', 'link', linkInfo]);
+                    });
+                }
+            }
+        })();
+
+        /* poor man's error logger */
+        (function () {
+            var errorsReported = 0;
+            var MAX_ERRORS = 5;
+            
+            window.onerror = function (text, file, line) {
+
+                if (errorsReported > MAX_ERRORS) {
+                    return;
+                }
+
+                errorsReported++;
+
+                window._gaq = window._gaq || [];
+                var errorInfo = (text || '(no text)') + ' @ ' + (file || '(no file)') + 
+                    ', line ' + (line || '(no line)');
+                window._gaq.push(['_trackEvent', 'error', 'onerror', errorInfo]);
+            };
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="599.91211"
+   height="518.76801"
+   viewBox="0 0 599.91212 518.76801"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="classes-objects.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5024"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5026"
+         style="fill:#7c147d;fill-opacity:0.88627451;fill-rule:evenodd;stroke:#7c147d;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:0.88627451"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5018"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend"
+       inkscape:collect="always">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#7c147d;fill-opacity:0.88627451;fill-rule:evenodd;stroke:#7c147d;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:0.88627451"
+         id="path5020"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4781"
+         style="fill:#7c147d;fill-opacity:0.88627451;fill-rule:evenodd;stroke:#7c147d;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:0.88627451"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4757"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#4b0c4c;fill-opacity:0.88627451;fill-rule:evenodd;stroke:#4b0c4c;stroke-width:1pt;stroke-opacity:0.88627451"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="324.83692"
+     inkscape:cy="243.96661"
+     inkscape:document-units="px"
+     inkscape:current-layer="g4154"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     showguides="false"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.61059651,-458.66583)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="100.0051"
+       y="558.39752"
+       id="text4150"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4152"
+         x="100.0051"
+         y="558.39752" /></text>
+    <g
+       id="g4154"
+       transform="translate(-10.714286,-12.142857)">
+      <g
+         id="g4189"
+         transform="translate(-11,-15)">
+        <rect
+           style="fill:#084c91;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="rect3344"
+           width="164.65486"
+           height="130.52142"
+           x="32.324883"
+           y="495.80869"
+           rx="2"
+           ry="2" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="43.436562"
+           y="523.04224"
+           id="text4146"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4148"
+             x="43.436562"
+             y="523.04224"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#ffffff;fill-opacity:1">Класс Question</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text4154"
+           y="550.59125"
+           x="43.828407"
+           style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:0.80612242;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#ffffff;fill-opacity:0.80612242;stroke:none;stroke-opacity:1"
+             y="550.59125"
+             x="43.828407"
+             id="tspan4156"
+             sodipodi:role="line">text</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:0.80612242;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="43.418251"
+           y="569.81506"
+           id="text4158"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4160"
+             x="43.418251"
+             y="569.81506"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#ffffff;fill-opacity:0.80612242;stroke:none;stroke-opacity:1">points = 5</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text4162"
+           y="589.03888"
+           x="43.821083"
+           style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:0.80612242;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#ffffff;fill-opacity:0.80612242;stroke:none;stroke-opacity:1"
+             y="589.03888"
+             x="43.821083"
+             id="tspan4164"
+             sodipodi:role="line">answers</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:0.80612242;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="43.930946"
+           y="608.2627"
+           id="text4166"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4168"
+             x="43.930946"
+             y="608.2627"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#ffffff;fill-opacity:0.80612242;stroke:none;stroke-opacity:1">correctAnswer</tspan></text>
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4173"
+         y="546.59125"
+         x="256.82843"
+         style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#2e2e2e;fill-opacity:0.80612248;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#2e2e2e;fill-opacity:0.80612248;stroke:none;stroke-opacity:1"
+           y="546.59125"
+           x="256.82843"
+           id="tspan4175"
+           sodipodi:role="line" /></text>
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4202"
+         style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         transform="translate(10.714286,464.50498)"><flowRegion
+           id="flowRegion4204"><rect
+             id="rect4206"
+             width="56.5"
+             height="35"
+             x="413.5"
+             y="97.5" /></flowRegion><flowPara
+           id="flowPara4208"></flowPara></flowRoot>      <g
+         id="g4452">
+        <rect
+           ry="2.750174"
+           rx="2.7654741"
+           y="482.79297"
+           x="230.8111"
+           height="195.43901"
+           width="216.08115"
+           id="rect4167"
+           style="fill:#ffffff;fill-opacity:1;stroke:#666666;stroke-width:0.68945336;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text4169"
+           y="504.61859"
+           x="237.08035"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';letter-spacing:0px;word-spacing:0px;fill:#074380;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             y="504.61859"
+             x="237.08035"
+             id="tspan4171"
+             sodipodi:role="line">объект $q1</tspan></text>
+        <text
+           xml:space="preserve"
+           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2e2e2e;fill-opacity:0.80612248;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           x="238.2216"
+           y="532.16736"
+           id="text5076"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="287.58685"
+             y="550.91736"
+             id="tspan5078"><tspan
+               x="238.2216"
+               y="532.16736"
+               id="tspan5080">text = &quot;</tspan><tspan
+               x="287.58685"
+               y="532.16736"
+               id="tspan5082">Ближайшая к Солнцу </tspan></tspan><tspan
+             sodipodi:role="line"
+             x="238.2216"
+             y="1.#INF"
+             id="tspan5084"><tspan
+               x="238.2216"
+               y="550.91736"
+               id="tspan5086">планета?&quot;</tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2e2e2e;fill-opacity:0.80612248;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           x="237.81145"
+           y="568.75122"
+           id="text5088"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="237.81145"
+             y="568.75122"
+             id="tspan5090"><tspan
+               x="237.81145"
+               y="568.75122"
+               id="tspan5092">points = 10</tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2e2e2e;fill-opacity:0.80612248;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           x="238.32414"
+           y="629.16742"
+           id="text5094"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="238.32414"
+             y="629.16742"
+             id="tspan5096"><tspan
+               x="238.32414"
+               y="629.16742"
+               id="tspan5098">correctAnswer = 3</tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2e2e2e;fill-opacity:0.80612248;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           x="238.21428"
+           y="589.65387"
+           id="text5100"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="353.58539"
+             y="608.40387"
+             id="tspan5102"><tspan
+               x="238.21428"
+               y="589.65387"
+               id="tspan5104">answers = [ 1 =&gt; '</tspan><tspan
+               x="353.58539"
+               y="589.65387"
+               id="tspan5106">Земля', 2 </tspan></tspan><tspan
+             sodipodi:role="line"
+             x="238.21428"
+             y="1.#INF"
+             id="tspan5108"><tspan
+               x="238.21428"
+               y="608.40387"
+               id="tspan5110">=&gt; 'Луна', 3 =&gt; 'Меркурий']</tspan></tspan></text>
+        <path
+           sodipodi:nodetypes="sssccss"
+           inkscape:connector-curvature="0"
+           id="rect4447"
+           d="m 233.64062,482.8587 210.4221,0 c 1.53114,0 2.76379,1.73996 2.76379,3.90125 l 0,26.15613 -215.94968,0 0,-26.15613 c 0,-2.16129 1.23265,-3.90125 2.76379,-3.90125 z"
+           style="fill:#084581;fill-opacity:0.08379888;stroke:none;stroke-width:0.82090849;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         id="g4629">
+        <g
+           id="g4675">
+          <g
+             transform="translate(135,130)"
+             id="g4600">
+            <g
+               id="g4605">
+              <rect
+                 ry="2.750174"
+                 rx="2.7654741"
+                 y="496.79297"
+                 x="249.8111"
+                 height="195.43901"
+                 width="216.08115"
+                 id="rect4281"
+                 style="fill:#ffffff;fill-opacity:1;stroke:#666666;stroke-width:0.68945336;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+            </g>
+          </g>
+          <text
+             sodipodi:linespacing="125%"
+             id="text4283"
+             y="648.61859"
+             x="391.08035"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';letter-spacing:0px;word-spacing:0px;fill:#074380;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               y="648.61859"
+               x="391.08035"
+               id="tspan4285"
+               sodipodi:role="line">объект $q2</tspan></text>
+          <text
+             xml:space="preserve"
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2e2e2e;fill-opacity:0.80612248;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+             x="392.22162"
+             y="676.16736"
+             id="text5112"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               x="441.58685"
+               y="694.91736"
+               id="tspan5114"><tspan
+                 x="392.22162"
+                 y="676.16736"
+                 id="tspan5116">text = &quot;</tspan><tspan
+                 x="441.58685"
+                 y="676.16736"
+                 id="tspan5118">Есть ли города на </tspan></tspan><tspan
+               sodipodi:role="line"
+               x="392.22162"
+               y="0"
+               id="tspan5120"><tspan
+                 x="392.22162"
+                 y="694.91736"
+                 id="tspan5122">Марсе?&quot;</tspan></tspan></text>
+          <text
+             xml:space="preserve"
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2e2e2e;fill-opacity:0.80612248;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+             x="391.81146"
+             y="712.75122"
+             id="text5124"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               x="391.81146"
+               y="712.75122"
+               id="tspan5126"><tspan
+                 x="391.81146"
+                 y="712.75122"
+                 id="tspan5128">points = 25</tspan></tspan></text>
+          <text
+             xml:space="preserve"
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2e2e2e;fill-opacity:0.80612248;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+             x="392.32416"
+             y="773.16742"
+             id="text5130"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               x="392.32416"
+               y="773.16742"
+               id="tspan5132"><tspan
+                 x="392.32416"
+                 y="773.16742"
+                 id="tspan5134">correctAnswer = 1</tspan></tspan></text>
+          <text
+             xml:space="preserve"
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2e2e2e;fill-opacity:0.80612248;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+             x="392.21429"
+             y="733.65387"
+             id="text5136"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               x="507.58539"
+               y="752.40387"
+               id="tspan5138"><tspan
+                 x="392.21429"
+                 y="733.65387"
+                 id="tspan5140">answers = [ 1 =&gt; '</tspan><tspan
+                 x="507.58539"
+                 y="733.65387"
+                 id="tspan5142">Нет', 2 =&gt; </tspan></tspan><tspan
+               sodipodi:role="line"
+               x="392.21429"
+               y="0"
+               id="tspan5144"><tspan
+                 x="392.21429"
+                 y="752.40387"
+                 id="tspan5146">'Да, я сам там был']</tspan></tspan></text>
+          <path
+             sodipodi:nodetypes="sssccss"
+             inkscape:connector-curvature="0"
+             id="path4450"
+             d="m 387.7899,627.10848 210.4221,0 c 1.53114,0 2.76379,1.73996 2.76379,3.90125 l 0,26.15613 -215.94968,0 0,-26.15613 c 0,-2.16129 1.23265,-3.90125 2.76379,-3.90125 z"
+             style="fill:#084581;fill-opacity:0.08379888;stroke:none;stroke-width:0.82090849;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         id="g4718">
+        <rect
+           ry="2.750174"
+           rx="2.7654741"
+           y="783.79297"
+           x="226.8111"
+           height="195.43901"
+           width="216.08115"
+           id="rect4342"
+           style="fill:#ffffff;fill-opacity:1;stroke:#666666;stroke-width:0.68945336;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text4344"
+           y="808.44702"
+           x="236.48091"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';letter-spacing:0px;word-spacing:0px;fill:#074380;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             y="808.44702"
+             x="236.48091"
+             id="tspan4346"
+             sodipodi:role="line">объект $q3</tspan></text>
+        <text
+           xml:space="preserve"
+           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2e2e2e;fill-opacity:0.80612248;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           x="236.46625"
+           y="835.99579"
+           id="text5148"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="285.83148"
+             y="0"
+             id="tspan5150"><tspan
+               x="236.46625"
+               y="835.99579"
+               id="tspan5152">text = &quot;</tspan><tspan
+               x="285.83148"
+               y="835.99579"
+               id="tspan5154">Столица США?&quot;</tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2e2e2e;fill-opacity:0.80612248;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           x="236.05609"
+           y="859.51556"
+           id="text5156"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="236.05609"
+             y="859.51556"
+             id="tspan5158"><tspan
+               x="236.05609"
+               y="859.51556"
+               id="tspan5160">points = 5</tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2e2e2e;fill-opacity:0.80612248;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           x="236.56879"
+           y="948.55219"
+           id="text5162"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="236.56879"
+             y="948.55219"
+             id="tspan5164"><tspan
+               x="236.56879"
+               y="948.55219"
+               id="tspan5166">correctAnswer = 3</tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2e2e2e;fill-opacity:0.80612248;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           x="236.61273"
+           y="886.88055"
+           id="text5168"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="351.98383"
+             y="905.63055"
+             id="tspan5170"><tspan
+               x="236.61273"
+               y="886.88055"
+               id="tspan5172">answers = [ 1 =&gt; '</tspan><tspan
+               x="351.98383"
+               y="886.88055"
+               id="tspan5174">Нью-Йорк', </tspan></tspan><tspan
+             sodipodi:role="line"
+             x="236.61273"
+             y="924.38055"
+             id="tspan5176"><tspan
+               x="236.61273"
+               y="905.63055"
+               id="tspan5178">2 =&gt; 'Лондон', 3 =&gt; </tspan></tspan><tspan
+             sodipodi:role="line"
+             x="236.61273"
+             y="351.98383"
+             id="tspan5180"><tspan
+               x="236.61273"
+               y="924.38055"
+               id="tspan5182">'Вашингтон']</tspan></tspan></text>
+        <path
+           sodipodi:nodetypes="sssccss"
+           inkscape:connector-curvature="0"
+           id="path4603"
+           d="m 229.75154,783.5004 210.4221,0 c 1.53114,0 2.76379,1.73996 2.76379,3.90125 l 0,26.15613 -215.94968,0 0,-26.15613 c 0,-2.16129 1.23265,-3.90125 2.76379,-3.90125 z"
+           style="fill:#084581;fill-opacity:0.08379888;stroke:none;stroke-width:0.82090849;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#611062;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="23.714287"
+         y="654.66742"
+         id="text5032"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="23.714287"
+           y="654.66742"
+           id="tspan5034"><tspan
+             x="23.714287"
+             y="654.66742"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#611062;fill-opacity:1"
+             id="tspan5036">Класс содержит названия </tspan></tspan><tspan
+           sodipodi:role="line"
+           x="23.714287"
+           y="673.41742"
+           id="tspan5038"><tspan
+             x="23.714287"
+             y="673.41742"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#611062;fill-opacity:1"
+             id="tspan5040">полей, которые есть во </tspan></tspan><tspan
+           sodipodi:role="line"
+           x="23.714287"
+           y="692.16742"
+           id="tspan5042"><tspan
+             x="23.714287"
+             y="692.16742"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#611062;fill-opacity:1"
+             id="tspan5044">всех объектах такого </tspan></tspan><tspan
+           sodipodi:role="line"
+           x="23.714287"
+           y="710.91742"
+           id="tspan5046"><tspan
+             x="23.714287"
+             y="710.91742"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#611062;fill-opacity:1"
+             id="tspan5048">класса, и значения по </tspan></tspan><tspan
+           sodipodi:role="line"
+           x="23.714287"
+           y="729.66742"
+           id="tspan5050"><tspan
+             x="23.714287"
+             y="729.66742"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#611062;fill-opacity:1"
+             id="tspan5052">умолчанию для них.</tspan><tspan
+             dx="0"
+             x="165.48186"
+             y="729.66742"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#611062;fill-opacity:1"
+             id="tspan5054" /></tspan><tspan
+           sodipodi:role="line"
+           x="23.714287"
+           y="748.41742"
+           id="tspan5056"><tspan
+             x="23.714287"
+             y="748.41742"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#611062;fill-opacity:1"
+             id="tspan5058" /></tspan><tspan
+           sodipodi:role="line"
+           x="23.714287"
+           y="767.16742"
+           id="tspan5060"><tspan
+             x="23.714287"
+             y="767.16742"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#611062;fill-opacity:1"
+             id="tspan5062">После того, как класс </tspan></tspan><tspan
+           sodipodi:role="line"
+           x="23.714287"
+           y="785.91742"
+           id="tspan5064"><tspan
+             x="23.714287"
+             y="785.91742"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#611062;fill-opacity:1"
+             id="tspan5066">создан, можно создать </tspan></tspan><tspan
+           sodipodi:role="line"
+           x="23.714287"
+           y="804.66742"
+           id="tspan5068"><tspan
+             x="23.714287"
+             y="804.66742"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#611062;fill-opacity:1"
+             id="tspan5070">любое число объектов </tspan></tspan><tspan
+           sodipodi:role="line"
+           x="23.714287"
+           y="823.41742"
+           id="tspan5072"><tspan
+             x="23.714287"
+             y="823.41742"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#611062;fill-opacity:1"
+             id="tspan5074">этого класса.</tspan></tspan></text>
+      <path
+         style="fill:none;fill-opacity:0.13333333;fill-rule:evenodd;stroke:#7c147d;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 2;stroke-dashoffset:0;stroke-opacity:0.88627451;marker-end:url(#Arrow2Mend)"
+         d="m 232.71429,569.50498 -48,-14"
+         id="path4748"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5016"
+         d="m 382.71429,729.50498 -197,-155"
+         style="fill:none;fill-opacity:0.13333333;fill-rule:evenodd;stroke:#7c147d;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 2;stroke-dashoffset:0;stroke-opacity:0.88627451;marker-end:url(#marker5018)"
+         sodipodi:nodetypes="cc" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;fill-opacity:0.13333333;fill-rule:evenodd;stroke:#7c147d;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 2;stroke-dashoffset:0;stroke-opacity:0.88627451;marker-end:url(#marker5024)"
+         d="m 240.71429,783.50498 -54,-189"
+         id="path5022"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

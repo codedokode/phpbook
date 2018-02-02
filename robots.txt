@@ -1,1 +1,3 @@
-# Under development
+# Site is under construction
+User-Agent: *
+Disallow: /

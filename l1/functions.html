@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Функции и новый айпад — PHP с нуля</title>
+    <link rel="apple-touch-icon" href="../phpbook-favicon-128.png">
+        <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="../phpbook-favicon-128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="../phpbook-favicon-64.png" sizes="64x64">
+    <link href="../style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="l-content-wrap">
+        <div class="l-content">
+
+
+
+            <h1 class="lifted-up">Функции и новый айпад</h1>
+    
+    <p>В этом уроке нас ждет:</p>
+    
+    <img src="../i/php-functions-t2.png" alt="Дайте кредит вон тому (Стив Джобс)">
+    
+    <p>Но для начала&hellip;</p>
+    
+    <h2>Немного скучной теории</h2>
+    
+    <img src="../i/php-functions.png" alt="Теория про функции">
+    
+    <h2>Айпад в кредит</h2>
+    
+    <p>Наверняка ты помнишь <a href="../l1/loops.html">задачу про любителя телефонов от Эппл</a>, который больше 
+        года потом вынужден был экономить на завтраках, чтобы расплатиться по кредиту. Так вот, у этой истории 
+        есть продолжение. <span class="spoiler">Я знаю, вы его ждали.</span> Итак, сделав последнюю
+        выплату по кредиту, наш школьник собрался было идти домой и направился к ст.м. Площадь Восстания, как 
+        вдруг его взгляд привекла реклама нового планшета <a href="http://www.apple.com/ipad/" target="_blank" 
+        title="Мне так нравится ставить ссылки и делать всплывающие подсказки! Мур-мур">Apple New Ipad 32Gb</a>
+       (всего за 39999 р). Понятно, что вскоре наш незадачливый любитель яблок уже держал в руках и поглаживал
+       новый девайс аки кота-манула и чуть слышно шептал «моя прелесть». Поскольку денег у нашего героя
+        уже не было, он решил воспользоваться услугой «покупка в кредит без первого вноса». Кредит
+         предлагают 3 банка, и все на разных условиях:</p>
+
+    <ul>
+        <li>кредит за 4% и (мелким шрифтом) 500 р комиссии в месяц от HomoCredit</li>
+        <li>кредит за 3% и 1000 р комиссии в месяц от того же банка (Softbank), что и в первой задаче</li>
+        <li>нереально вкусное предложение от StrawberryBank за 2% в месяц, без комиссии, но с платой 
+            в размере 7777 р за открытие счета (эту сумма прибавляется к сумме долга)</li>
+    </ul>
+
+    <p><strong>Задание:</strong> воспользовавшись ранее купленным айфоном (и полученными на сами знаете каком 
+        сайте знаниями), определи наиболее выгодный кредит. Платить школьник, как и прежде, может не 
+         более 5000 р. в месяц. Сначала начисляются проценты и комиссия, а только потом происходит выплата.</p>
+    
+    <img src="../i/php-functions-t1.png" alt="Задачка про айпад в кредит">
+
+    <p>Если у тебя есть соблазн сделать все, тупо скопипастив код 3 раза — знай, это решение не пройдет.
+     Так-то. </p>
+
+    <p>Удачи!</p>
+    
+    <h2>Константы</h2>
+    
+    <p>Константы — это что-то вроде переменных, значение которым присваивается только один раз и никогда не меняется. 
+        Чтобы лучше отличать их от переменных, их имена пишут большими буквами, и перед ними не ставят знак доллара.
+        Константы пока нам особо не нужны, но ты можешь столкнуться с ними в других программах, потому я о них расскажу.</p>
+        
+    <img src="../i/php-constant.png" alt="Урок про константы">
+    
+    <div class="b-next-page">
+    <span class="m-label">дальше:</span>
+    <span class="m-link"><a href="../l1/regexp.html">Регулярные выражения</a>&nbsp;&rarr;</span>
+</div>    <div class="b-epilog">
+        <p>-----</p>
+                    <p><strong>Куда вводить код? Что надо скачать?</strong> Читай <a href="../">первый урок</a>.</p>    
+                <p><strong>Есть вопросы?</strong> Задай гуглу или автору.</p>
+        <p><strong>Нравится урок?</strong> Лайкай, репости, приглашай друзей, пости котов и Канако,
+             шли добра, решай задачи, помогай новичкам! Кнопок для лайка нет, кто хочет зарепостить, всегда может сделать это ручками.</p>
+        <p><strong>Как связаться с автором?</strong> <span class="spoiler"> Я хочу переодеть его в платье
+         школьницы и жениться на нем.</span> Ящик codedokode (кот) gmail.com ждет ваших писем.  А
+         <span style="color: #009; text-decoration: underline; cursor: pointer;">вконтактик</span> и 
+            <span style="color: #009; text-decoration: underline; cursor: pointer;">фейсбучек</span> ждут ваших лайков.
+         Но ответ на банальные вопросы лучше искать в Гугле или на stackoverflow.</p>
+        <p><strong>Я решил задачку!!!</strong> Молодец, делай следующий урок</p>
+                    <p><strong>Ideone не работает!11</strong> Ну так открой Гугл и найди сайты 
+            вроде https://repl.it/languages/php , http://phptester.net/ , 
+            http://sandbox.onlinephpfunctions.com/ , 
+            http://codepad.org/ или http://www.runphponline.com/ . Не ленись.</p>
+        
+        <p><strong>Почему так много рекламы?</strong> Всю рекламу
+        на сайте ставит юкоз (бесплатный хостинг же), а не я.</p>
+        <p>На сайте установлена система Google Analytics (и еще несколько аналогичных систем от юкоза). Данные о твоем IP-адресе, посещаемых страницах, 
+        времени посещения отправляются в Google Corporation, США. Хочу знать, кто и зачем сюда заходит. Поверь, 
+        другие сайты делают точно так же. Все сайты пишут логи.</p>
+    </div>
+        
+                
+
+        </div>
+    </div>        
+    <div class="l-sidebar">
+
+        <ul class="b-main-menu vlist">
+                                                                                        <li>
+                                            <a href="../">Начало</a>
+                                    </li>
+                                                                                                
+                                                    <li><ul class="vlist b-menu-l1">
+                                                            <li>
+                                            <a href="../l1/variables.html">Переменные</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/conditions.html">Условия и игра в кубики</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/loops.html">Циклы и айфон в кредит</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/arrays.html">Массивы и рулетка</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/strings.html">Строки, хакеры и шифровки</a>
+                                    </li>
+                                                                                        <li class='active'>
+                                            <span>Функции и новый айпад                            <ins class="dec-l"></ins><ins class="dec-r"></ins></span>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/regexp.html">Регулярные выражения</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/finals.html">Повторим?</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/mou-ikkai.html">Бонусные задачки</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/pasta.html">Пасты и ООП</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/reading-list.html">Учим сами</a>
+                                    </li>
+                                                                                                                            </ul></li>
+                                                            <li class='separated'>
+                                            <a href="../tsuzuke.html">Что делать дальше?</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../i-am-smart.html">Я у мамы умный</a>
+                                    </li>
+                                
+                    </ul>
+
+        <div class="b-block small-font">
+            <h2>Что это?</h2>
+            
+            <p>Это сайт, где собраны простые 
+                уроки по языку программирования
+                                PHP. 
+                                Даже если ты никогда
+                не слышал слова 
+                «программирование» и учишься
+                на филолога, ты можешь 
+                попробовать их сделать.
+                </p>
+
+            <p>Скачивать и устанавливать тоже
+                ничего не надо, делать уроки 
+                можно даже с айпада или 
+                ведроида.</p>
+        </div>
+
+            </div>
+
+    
+    
+    <script type="text/javascript">
+
+        var SCOPE_PAGE_LEVEL = 3;
+
+        window._gaq = window._gaq || [];
+        _gaq.push(['_setAccount', 'UA-34859509-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        
+        /* outbound link click tracking to check whether anyone uses those links */
+        (function() {
+            function startsWith(str, substr) {
+                return str.substr(0, substr.length) == substr;
+            }
+            
+            function addEvent(node, evt, fn) {
+                if (node.addEventListener) {
+                    node.addEventListener(evt, fn, false);
+                } else {
+                    node.attachEvent('on' + evt, fn);
+                }
+            }
+        
+            var links = document.getElementsByTagName('a');
+            var baseUrl = 'http://' + location.host;
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                
+                if (link.href != baseUrl && !startsWith(link.href, baseUrl + '/')) {
+                    // Is an external link
+                    addEvent(link, 'mousedown', function(ev) { 
+                        window._gaq = window._gaq || [];
+                        var e = ev || window.event;
+                        var link = e.target || e.srcElement;
+                        var text = link.innerText || link.textContent || 'no text';
+                        if (text.length > 20) {
+                            text = text.substr(0, 20) + '…';
+                        }
+                        var linkInfo = link.href + ' (' +  text + ')';
+                        window._gaq.push(['_trackEvent', 'flow', 'link', linkInfo]);
+                    });
+                }
+            }
+        })();
+
+        /* poor man's error logger */
+        (function () {
+            var errorsReported = 0;
+            var MAX_ERRORS = 5;
+            
+            window.onerror = function (text, file, line) {
+
+                if (errorsReported > MAX_ERRORS) {
+                    return;
+                }
+
+                errorsReported++;
+
+                window._gaq = window._gaq || [];
+                var errorInfo = (text || '(no text)') + ' @ ' + (file || '(no file)') + 
+                    ', line ' + (line || '(no line)');
+                window._gaq.push(['_trackEvent', 'error', 'onerror', errorInfo]);
+            };
+        })();
+    </script>
+</body>
+</html>

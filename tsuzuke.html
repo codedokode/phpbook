@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Что делать дальше? — PHP с нуля</title>
+    <link rel="apple-touch-icon" href="./phpbook-favicon-128.png">
+        <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="./phpbook-favicon-128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="./phpbook-favicon-64.png" sizes="64x64">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="l-content-wrap">
+        <div class="l-content">
+
+
+
+            <h1 class="lifted-up">Что делать дальше?</h1>
+    
+    <p>Изучать другие технологии.</p>
+    
+    <h2>А что вообще должен знать хороший веб-разработчик?</h2>
+    
+    <ul>
+        <li>Один из серверных языков программирования (PHP5, Java или Python), 
+            ООП (объектно-ориентированное программирование): знать, чем абстрактный класс отличается от интерфейса,  
+            зачем нужна инкапсуляция и почему нельзя менять свойства объекта извне 
+            <span class="spoiler">не считая всякой мелочи вроде DTO</span>. </li>
+            
+        <li>Иметь представление об MVC, Domain Model, популярных фреймворках (в 2016 это Symfony) и 
+            их устройстве, уметь написать Data Table Gateway или класс для валидации формы.</li>
+        
+        <li>Что такое базы данных, знать язык SQL, зачем нужны индексы, как делается 
+            шардинг и за что мы не любим джойны в нагруженных проектах.</li>
+            
+        <li>Клиентсайд-технологии (те, что работают в браузере): HTML5, CSS3, резиновая верстка, 
+            как работают float и clear, как работает position:absolute без указания left/top/right/bottom, 
+            CSS-спрайты, Javascript, jQuery, что такое AJAX, что такое замыкания, свойство prototype,
+            что такое same origin policy, как показать на
+            странице видео, особенности старых браузеров, что за организация W3C, что за сайт такой quirksmode, 
+            как с помощью CSS определить айфоны и планшеты, срабатывает ли onclick при нажатии «Enter» на ссылке. 
+            Как сделать раскрывающееся меню, работающее и на айфоне <span class="spoiler"> в 2012 году надо 
+            было добавить раскрытие по click, а в 2016 мобильные браузеры нормально работают с 
+            событием hover</span> </li>
+            
+        <li>Представление о протоколах HTTP/1.0, HTTP/1.1, какие бывают заголовки, бывают ли многострочные заголовки, 
+            коды ответа, методы GET/POST, MIME, Expires/Last-Modified и вечное кеширование, robots.txt</li>
+            
+        <li>На начальном уровне уметь пользоваться CVS (git, например), GitHub, pastebin, linux shell. Уметь установить
+            и настроить nginx/apache/mysql на чистый сервер с Debian.</li>
+
+        <li>Представление о дизайне, юзабилити и типографике, какой поставить межстрочный интервал, какая должна быть
+            длина строки, почему текст радиокнопки надо заключать в label, почему нельзя в href у ссылки 
+            писать javascript:void(), как сделать поле выбора города для тысяч городов.</li>     
+
+        <li>Что такое development/testing/production environment, Selenium, автоматизированное 
+        тестирование, деплоймент.</li>
+    </ul>
+    
+    <h2>Так много?77</h2>
+    
+    <p>Если тебя пугает такое количество непонятных слов — не бойся, никто не говорит, что это надо выучить за день, 
+        для начала можно освоить какие-то основы, нужные тебе для работы, а потом постепенно расширять свои знания.</p>
+    
+    <h2>Я беден, у  меня нет компьютера, только айпад, могу ли я кодить?</h2>
+    
+    <p>Говорят, что есть приложение <a href="http://www.becomekodiak.com/">Kodiac PHP</a>, оно позволяет редактировать
+    и немножечко запускать PHP код. Также, есть и другие редакторы с поддержкой FTP, 
+    например, <a href="http://www.textasticapp.com/">Textastic</a>, <a href="http://www.koderapp.com/">Koder App</a>,
+    дальше гугли их сам. На андроиде надо поставить либо по отдельности (бесплатно), либо
+    одним приложением (обычно платно) редактор кода, веб-сервер, PHP.</p>
+    
+    <h2>Я знаю основы, что почитать еще?</h2>
+    
+    <p>Читать официальный мануал по PHP:
+    <a href="http://www.php.net/manual/ru/intro-whatcando.php">http://www.php.net/manual/ru/intro-whatcando.php</a>. 
+    Читать <a href="http://habrahabr.ru">Хабр</a>. </p>
+
+    <p>Читать <a href="http://www.artlebedev.ru/tools/technogrette/" target="_blank">Техногрет</a>, 
+    читать <a href="http://artgorbunov.ru/bb/soviet/" target="_blank">Советы</a>.</p>
+
+    <p>Читать <a href="https://m.roem.ru/" target="_blank">Роем</a> и 
+        <a href="https://vc.ru/" target="_blank">Цукерберг Позвонит</a>.</p>
+        
+    <p>Читать мануалы по Yii, Symfony, учиться ими пользоваться, смотреть их код.</p>
+    
+    <p>Читать архивы <a href="https://events.yandex.ru/events/yasubbotnik/">Яндекс-субботников</a>. Там нет ни слова про PHP, но есть
+    много ценнейшей информации по веб-разработке, надеюсь, ты понимаешь, что Яндекс в этой области — отнюдь не отстающая компания. Еще 
+    есть <a href="http://research.google.com/pubs/papers.html">публикации от Гугла</a>, но они на английском и сложные, хоть и не менее 
+    интересные.</p>
+    
+    <p>По верстке (CSS) почитать: <a href="http://softwaremaniacs.org/blog/category/primer/">прекрасный цикл статей про
+        флоаты и позиционирование</a>, <a href="http://htmlbook.ru/">htmlbook.ru</a>, 
+        <a href="http://www.w3.org/TR/html5/">стандарт HTML 5 (англ.)</a>,
+        <a href="http://www.w3.org/TR/CSS21/">стандарт CSS2.1 (англ.)</a>,
+        <a href="http://chikuyonok.ru/">блог Сергея Чикуёнка</a>, 
+        <a href="http://pepelsbey.net/" target="_blank">http://pepelsbey.net/</a>.</p>
+        
+    <p>По яваскрипту: читать <a href="http://learn.javascript.ru">прекрасный учебник learn.javascript.ru</a>,
+        знать про <a href="http://www.quirksmode.org/compatibility.html">сайт quirksmode (англ.)</a>,
+        поглядывать в <a href="https://developer.mozilla.org/en-US/docs/DOM">мозилловские доки по DOM (англ.)</a>,
+        <a href="http://msdn.microsoft.com/en-us/library/ms533022(v=vs.85).aspx">майкрософтовские доки по ИЕ (англ.)</a>
+        почитать, какие библиотеки использует Гугл: <a href="https://developers.google.com/closure/">Google Closure Tools (англ.)</a> (чего
+        только стоит, например, описанный там кроссбраузерный способ детектирования вставки из буфера обмена).</p>
+        
+    <p>Интересная статья про устройство и работу браузеров: 
+        «<a href="http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/" 
+        target="_blank">Принципы работы современных веб-браузеров</a>». Книга, посвященная клиентской оптимизации
+        «<a href="http://speedupyourwebsite.ru/books/speed-up-your-website/" target="_blank">Разгони свой сайт</a>»</p>
+
+    <p>По SQL: прочесть <a href="http://www.opennet.ru/docs/RUS/rusql/" target="_blank">Учебник 
+        по SQL (рус.)</a>, <a href="http://mysqlru.com/" target="_blank">Учебник по MySQL (рус., так себе)</a>, 
+    <a href="http://dev.mysql.com/doc/refman/5.5/en/">мануал от MySQL (англ.)</a> или
+        <a href="http://www.postgresql.org/docs/manuals/">мануал по Postgres (англ.)</a>,
+        <a href="http://docs.mongodb.org/manual/">мануал по MongoDB (англ.)</a> 
+        (мануал по memcached не пишу, так как он изучается за пару часов).</p>
+        
+    <p>Почитать про nginx и sphinx. Сборник статей и переводов про архитектуру высоконагруженных проектов 
+        (тви/вконтактик/stack overflow) можно прочесть в <a href="http://www.insight-it.ru/highload/">блоге
+         Ивана Блинкова Insight IT</a>.</p>
+    
+    <p><strong>Написать какой-нибудь проект.</strong></p>
+    
+    <p>Также, для тех, кому интересно, есть манга (комикс) по основам баз данных: 
+        <a href="http://nostarch.com/mg_databases.htm">http://nostarch.com/mg_databases.htm</a></p>
+    
+    <p>Имеется прекрасный сборник видеолекций по CS (в смысле Computer Science): 
+        <a target="_blank" href="http://www.lektorium.tv/university/?id=2932">CS Center</a>. Не все лекции там
+        относятся к разработке сайтов, но, например, курсы по сетевым технологиями и по базам данных стоит 
+        глянуть.</p>
+
+    <p>Если ты знаешь английский, можешь также посмотреть видеокурс по AI от Стенфорда, хорошо для разминки мозгов: 
+        <a href="https://www.ai-class.com/home/">https://www.ai-class.com/home/</a>. Слишком просто? Как тогда насчет
+        <a href="http://swtch.com/~rsc/regexp/regexp1.html" target="_blank">статьи про ускорение работы регулярных выражений
+        при помощи конечных автоматов (англ.)</a> ?</p>
+    
+    <p>И да, если у тебя большинство ссылок на этой странице фиолетовые — <span class="spoiler">то добра тебе, брат-разработчик :3</span></p>
+    
+    <p>В дополнение. Некоторые люди любят (вместо работы) разводить дискуссии и споры на тему того, какой вид кавычек быстрее работает. Вот как 
+    надлежит с ними поступать:</p>
+    
+    <img src="./i/signle-vs-double-quotes.jpg" alt="Одиночные кавычки быстрее двойных? Вон из профессии">
+    
+        <div class="b-epilog">
+        <p>-----</p>
+                    <p><strong>Куда вводить код? Что надо скачать?</strong> Читай <a href="./">первый урок</a>.</p>    
+                <p><strong>Есть вопросы?</strong> Задай гуглу или автору.</p>
+        <p><strong>Нравится урок?</strong> Лайкай, репости, приглашай друзей, пости котов и Канако,
+             шли добра, решай задачи, помогай новичкам! Кнопок для лайка нет, кто хочет зарепостить, всегда может сделать это ручками.</p>
+        <p><strong>Как связаться с автором?</strong> <span class="spoiler"> Я хочу переодеть его в платье
+         школьницы и жениться на нем.</span> Ящик codedokode (кот) gmail.com ждет ваших писем.  А
+         <span style="color: #009; text-decoration: underline; cursor: pointer;">вконтактик</span> и 
+            <span style="color: #009; text-decoration: underline; cursor: pointer;">фейсбучек</span> ждут ваших лайков.
+         Но ответ на банальные вопросы лучше искать в Гугле или на stackoverflow.</p>
+        <p><strong>Я решил задачку!!!</strong> Молодец, делай следующий урок</p>
+                    <p><strong>Ideone не работает!11</strong> Ну так открой Гугл и найди сайты 
+            вроде https://repl.it/languages/php , http://phptester.net/ , 
+            http://sandbox.onlinephpfunctions.com/ , 
+            http://codepad.org/ или http://www.runphponline.com/ . Не ленись.</p>
+        
+        <p><strong>Почему так много рекламы?</strong> Всю рекламу
+        на сайте ставит юкоз (бесплатный хостинг же), а не я.</p>
+        <p>На сайте установлена система Google Analytics (и еще несколько аналогичных систем от юкоза). Данные о твоем IP-адресе, посещаемых страницах, 
+        времени посещения отправляются в Google Corporation, США. Хочу знать, кто и зачем сюда заходит. Поверь, 
+        другие сайты делают точно так же. Все сайты пишут логи.</p>
+    </div>
+        
+                
+
+        </div>
+    </div>        
+    <div class="l-sidebar">
+
+        <ul class="b-main-menu vlist">
+                                                                                        <li>
+                                            <a href="./">Начало</a>
+                                    </li>
+                                                                                        <li class='active separated'>
+                                            <span>Что делать дальше?                            <ins class="dec-l"></ins><ins class="dec-r"></ins></span>
+                                    </li>
+                                                                                        <li>
+                                            <a href="./i-am-smart.html">Я у мамы умный</a>
+                                    </li>
+                                
+                    </ul>
+
+        <div class="b-block small-font">
+            <h2>Что это?</h2>
+            
+            <p>Это сайт, где собраны простые 
+                уроки по языку программирования
+                                PHP. 
+                                Даже если ты никогда
+                не слышал слова 
+                «программирование» и учишься
+                на филолога, ты можешь 
+                попробовать их сделать.
+                </p>
+
+            <p>Скачивать и устанавливать тоже
+                ничего не надо, делать уроки 
+                можно даже с айпада или 
+                ведроида.</p>
+        </div>
+
+            </div>
+
+    
+    
+    <script type="text/javascript">
+
+        var SCOPE_PAGE_LEVEL = 3;
+
+        window._gaq = window._gaq || [];
+        _gaq.push(['_setAccount', 'UA-34859509-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        
+        /* outbound link click tracking to check whether anyone uses those links */
+        (function() {
+            function startsWith(str, substr) {
+                return str.substr(0, substr.length) == substr;
+            }
+            
+            function addEvent(node, evt, fn) {
+                if (node.addEventListener) {
+                    node.addEventListener(evt, fn, false);
+                } else {
+                    node.attachEvent('on' + evt, fn);
+                }
+            }
+        
+            var links = document.getElementsByTagName('a');
+            var baseUrl = 'http://' + location.host;
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                
+                if (link.href != baseUrl && !startsWith(link.href, baseUrl + '/')) {
+                    // Is an external link
+                    addEvent(link, 'mousedown', function(ev) { 
+                        window._gaq = window._gaq || [];
+                        var e = ev || window.event;
+                        var link = e.target || e.srcElement;
+                        var text = link.innerText || link.textContent || 'no text';
+                        if (text.length > 20) {
+                            text = text.substr(0, 20) + '…';
+                        }
+                        var linkInfo = link.href + ' (' +  text + ')';
+                        window._gaq.push(['_trackEvent', 'flow', 'link', linkInfo]);
+                    });
+                }
+            }
+        })();
+
+        /* poor man's error logger */
+        (function () {
+            var errorsReported = 0;
+            var MAX_ERRORS = 5;
+            
+            window.onerror = function (text, file, line) {
+
+                if (errorsReported > MAX_ERRORS) {
+                    return;
+                }
+
+                errorsReported++;
+
+                window._gaq = window._gaq || [];
+                var errorInfo = (text || '(no text)') + ' @ ' + (file || '(no file)') + 
+                    ', line ' + (line || '(no line)');
+                window._gaq.push(['_trackEvent', 'error', 'onerror', errorInfo]);
+            };
+        })();
+    </script>
+</body>
+</html>
+

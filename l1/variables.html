@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Переменные — PHP с нуля</title>
+    <link rel="apple-touch-icon" href="../phpbook-favicon-128.png">
+        <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="../phpbook-favicon-128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="../phpbook-favicon-64.png" sizes="64x64">
+    <link href="../style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="l-content-wrap">
+        <div class="l-content">
+
+
+
+            <h1 class="lifted-up">Переменные</h1>
+    
+    <h2>Начнем с повторения</h2>
+
+    <p>Одна из вещей, которые делают программы — это работа с числами. Если ты читал предыдущий урок, то 
+        наверняка запомнил команду <code>echo</code>, которая печатает текст и числа. И наверняка ты помнишь, 
+        что в PHP есть <dfn>операторы</dfn> 
+        <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> (который ты не перепутаешь с обратным
+        слешем «\»), <code>%</code> (который обозначает деление с остатком), а дробные числа 
+        пишутся через точку.</p>    
+
+    <h2>Переменные</h2>
+
+    <p>Когда выполняется код, нам надо где-то хранить промежуточные результаты и другие данные. Для этого 
+        в программировании используются <dfn>переменные</dfn>. Переменная — 
+        это такая штука, в которую можно сохранить какое-то число или строку. У каждой переменной есть имя, 
+        и она обозначается конструкцией вроде <code>$daysPassed</code> (в начале
+        всегда ставится знак доллара). Название (daysPassed — «прошлоДней») придумывает программист (это ты). 
+        Чтобы сохранить значение в переменной, используется <span class="nowrap">оператор <code>=</code>:</span></p>
+
+    <p><code>$daysPassed = 7;</code></p>
+
+    <p><span class="spoiler">Надеюсь, ты еще помнишь, что после каждой инструкции ставится
+        точка с запятой?</span></p>
+
+    <p>Эта команда создает переменную <code>$daysPassed</code> и кладет в нее число 7. Теперь ты можешь, 
+        например, вывести это значение с помощью echo:</p>
+
+    <p><code>echo $daysPassed;</code>  → напечатает <samp>7</samp></p>
+
+    <p>Переменную можно вставить внутрь строки (если она в двойных кавычках, а не в одинарных), 
+        чтобы вывести поясняющий текст:</p>
+
+    <p><code>echo "Прошло дней: $daysPassed";</code> → выведет <samp>Прошло дней: 7</samp></p>
+
+    <p>Также, в переменной можно сохранить (<dfn>присвоить переменной значение</dfn>, говорят программисты) 
+        строку <code>$name = "Ivan";</code> или результат вычисления какого-то выражения: 
+        <code>$balance = 1000 + 1000;</code>.</p>
+
+    <!--p>Позднее эту переменную можно использовать в каком-то выражении
+        или вывести с помощью echo: <code>echo $balance;</code>. </p -->
+    <div class="b-side-note">        
+        <p>Не знаешь английский и не можешь придумать имя переменной? Воспользуйся сервисом
+            <a href="http://slovari.yandex.ru" target="_blank">Яндекс.словари</a> или
+            <a href="http://translate.google.com" target="_blank">Google translate</a>, только не 
+            пиши по-русски, над тобой же смеяться будут.</p>
+    </div>
+
+    <p>Имена переменных могут состоять из латинских букв <code>a-z, A-Z</code>, цифр <code>0-9</code> и 
+        знака подчеркивания <code>_</code>. Хоть знак подчеркивания и разрешено использовать в имени, 
+        это не рекомендуется. Имена принято начинать с маленькой буквы, а если оно состоит
+        из нескольких слов, то эти слова, кроме первого, начинаются с большой буквы (это называется 
+        <dfn>camelCase</dfn>):</p>
+
+    <img src="../i/l1/l1-variable-name.png" alt="Имена переменных"
+        class="o-seamless-left">
+
+    <p><strong>Важно!</strong> Регистр букв в имени переменной (большая или маленькая) 
+        <strong>имеет значение!</strong>
+        <code>$a</code> и <code>$A</code> — это 2 разных переменных (причем вторая еще и названа плохо, 
+        имя должно начинаться с маленькой буквы).</p>
+
+    <p>Имя обязательно должно быть осмысленным и обозначать, что хранится в этой 
+    переменной. Имена надо писать на английском. Думай о тех, кому придется читать твой
+    код, помни, что код пишется в первую очередь для людей. </p>
+
+    <div class="h-php-problem" id="problem-exchange-dollars">
+        <h2 class="p-name">Перевод долларов в рубли</h2>
+
+        <div class="e-description">
+            <div class="b-problem">
+                <p>W2. Допиши программу, переводящую доллары в рубли, чтобы 
+                    она работала правильно. Заготовку 
+                    можешь взять по ссылке <a href="http://ideone.com/CsCOBV" 
+                    target="_blank">http://ideone.com/CsCOBV</a> или  
+                    <a href="http://paste2.org/pE927NmC" 
+                    target="_blank">http://paste2.org/pE927NmC</a></p>
+            </div>
+
+            <img src="../i/l1/l1-vars-convert.png" alt="Задачка на перевод рублей в доллары">
+        </div>        
+    </div>
+
+    <img src="../i/l1/l1-variables.png" alt="Создание переменных">
+
+    <h2>Переменные и операции с ними</h2>
+
+    <p>Переменные можно использовать в выражениях и складывать, умножать, делить, и т.д. Для того, чтобы
+        увеличить значение в переменной на 5, можно написать <code>$a = $a + 5;</code> (мы прибавляем 5 к тому, 
+        что ранее хранилось в переменной и сохраняем результат в нее же), но для таких целей есть более короткая
+        форма записи: <code>$a += 5;</code>. Чтобы увеличить переменную на 1, можно писать еще короче:
+        <code>$a++;</code> — делает то же самое, что и <code>$a += 1;</code>.</p>
+
+    <img class="o-seamless-left" src="../i/l1/l1-operators.png" alt="Операторы и сокращенная форма записи">
+
+    <h3 class="b-hide-header" data-for="content/hide-op-return-value">Хитрости и уточнения</h3>
+
+    <div class="b-hide" id="content/hide-op-return-value">
+        
+        <p>Эта информация только для тех, кто хочет знать больше необходимого минимума и изучать
+         ее необязательно (хотя и полезно для расширения кругозора).</p>
+
+        <p>Интересно, что в PHP почти все операторы, даже такие, как <code>=</code> возвращают
+        какое-то значение, потому их можно использовать в выражениях (хотя это запутывает код и делает его
+        нечитаемым, так что злоупотреблять не стоит). Например, <code>=</code> возвращает присвоенное 
+        значение и его потому можно использовать так:</p>
+
+        <p><code>$a = ($b = ($c = 1));</code></p>
+
+        <p>или, если убрать скобки, <code>$a = $b = $c = 1;</code></p>
+
+        <p>Сначала выполнится действие <code>$c = 1</code>, которое присвоит <code>$c</code> значение 1 и 
+            вернет это значение. Возвращенное значение присвоится <code>$b</code>, а затем и <code>$a</code>.
+            Таким образом, во всех 3 переменных окажется единица.</p>
+
+        <p>Операторы <code>+=</code>, <code>-=</code> и подобные возвращают увеличенное/уменьшенное 
+            значение. А вот с оператором <code>++</code> ситуация сложнее. Его можно записать перед
+            переменной <code>++$i</code> (<dfn>префиксная форма</dfn>) и после <code>$i++</code> 
+            (<dfn>постфиксная форма</dfn>).
+            В первом случае сначала увеличивается переменная, и возвращается увеличенное значение, а 
+            во втором — переменная тоже увеличивается, но возвращается исходное значение, которое было
+            в ней <em>до</em> инкремента.</p>
+
+        <p>Кстати, слово <dfn>инкремент</dfn> обозначает увеличение на 1, а <dfn>декремент</dfn> - уменьшение.</p>
+    </div>
+
+    <h2>Функции</h2>
+
+    <p>В PHP есть и более сложные операции над числами, например, округление или нахождение максимального
+        из нескольких чисел, они делаются с помощью <dfn>функций</dfn>. Запоминать функции наизусть не надо,
+        достаточно просто знать, что они существуют. Вот список основных функций, которые могут пригодиться.
+        Полное их описание ты всегда можешь найти в официальном мануале по PHP.<p>
+
+    <table class="o-table-wide">
+        <tr><th style="width: 25%;">Функция</th><th>Описание</th><th style="width: 10%;">Мануал</th></tr>
+        <tr>
+            <td><code>sqrt($x)</code></td>
+            <td>Считает квадратный корень из числа $x</td>
+            <td><a href="https://secure.php.net/manual/ru/function.sqrt.php" target="_blank">sqrt</a></td>
+        </tr>
+        <tr>
+            <td><code>abs($x)</code></td>
+            <td>Возвращает модуль числа (т.е. абсолютное значение без знака, <code>abs(-5)</code> => <samp>5</samp>)</td>
+            <td><a href="https://secure.php.net/manual/ru/function.abs.php" target="_blank">abs</a></td>
+        </tr>
+        <tr>
+            <td><code>mt_rand($a, $b)</code></td>
+            <td>Возвращает случайное целое число от $a до $b</td>
+            <td><a href="https://secure.php.net/manual/ru/function.mt-rand.php" target="_blank">mt_rand</a></td>
+        </tr>
+        <tr>
+            <td><code>max($a, $b, $c, $d)</code></td>
+            <td>Возвращает наибольшее из нескольких чисел</td>
+            <td><a href="https://secure.php.net/manual/ru/function.max.php" target="_blank">max</a></td>
+        </tr>
+        <tr>
+            <td><code>min($a, $b)</code></td>
+            <td>Возвращает наименьшее из нескольких чисел</td>
+            <td><a href="https://secure.php.net/manual/ru/function.min.php" target="_blank">min</a></td>
+        </tr>
+        <tr>
+            <td><code>pow($x, $y)</code></td>
+            <td>Возводит $x в степень $y</td>
+            <td><a href="https://secure.php.net/manual/ru/function.pow.php" target="_blank">pow</a></td>
+        </tr>
+        <tr>
+            <td><code>pi()</code></td>
+            <td>Возвращает число Пи (3.1415 и так далее)</td>
+            <td><a href="https://secure.php.net/manual/ru/function.pi.php" target="_blank">pi</a></td>
+        </tr>
+        <tr>
+            <td><code>floor($x)</code></td>
+            <td>Округляет число вниз (в сторону -&#8734;), например,
+                <code>floor(3.8)</code> => <samp>3</samp></td>
+            <td><a href="https://secure.php.net/manual/ru/function.floor.php" target="_blank">floor</a></td>
+        </tr>
+        <tr>
+            <td><code>ceil($x)</code></td>
+            <td>Округляет число в большую сторону (в сторону +&#8734;), например,
+                <code>ceil(3.1)</code> => <samp>4</samp></td>
+            <td><a href="https://secure.php.net/manual/ru/function.ceil.php" target="_blank">ceil</a></td>
+        </tr>
+        <tr>
+            <td><code>round($x)</code></td>
+            <td>Округляет число по математическим правилам (к ближайшему
+                целому)</td>
+            <td><a href="https://secure.php.net/manual/ru/function.round.php" target="_blank">round</a></td>
+        </tr>
+        <tr>
+            <td><code>round($x, $n)</code></td>
+            <td>Округляет число по математическим правилам (к ближайшему
+                целому) до $n знаков после запятой, например, 
+                <code>round(3.1415, 2)</code> => <samp>3.14</samp></td>
+            <td><a href="https://secure.php.net/manual/ru/function.round.php" target="_blank">round</a></td>
+        </tr>
+        <tr>
+            <td><code>sin($x)</code></td>
+            <td>Считает синус от $x (где $x задается в радианах, а не в градусах). Еще есть
+                <code>cos($x)</code>, <code>tan($x)</code>, <code>asin($x)</code>, но нам они не понадобятся, 
+                не бойся.</td>
+            <td><a href="https://secure.php.net/manual/ru/function.sin.php" target="_blank">sin</a></td>
+        </tr>
+    </table>
+
+    <p>Обрати внимание, что функция не меняет значение указанных в скобках переменных, а возвращает
+        новое значение. Его надо сохранить в какую-нибудь переменную, например, 
+        так:</p>
+
+    <pre class="b-code-block"><code>&lt;?php
+error_reporting(-1);
+
+$a = 25;
+$b = sqrt($a);
+echo "Если взять корень из $a, получится $b";</code></pre>
+
+    <h2>Вывод значения переменной</h2>
+
+    <p>Узнать, что хранится в переменной, можно, написав команду <code>var_dump($x);</code> или 
+        <code>echo $x;</code>. Переменные также можно подставлять в строку (если она в двойных кавычках),
+        чтобы вывести какой-то поясняющий текст:</p>
+
+    <img class="o-seamless-left" src="../i/l1/l1-var-dump.png" alt="Вывод значения переменной">
+
+
+    <div class="h-php-problem" id="problem-dice">
+        <h2 class="p-name">Задача про кубик</h2>
+
+        <p>Итак, взяв за основу картинку ниже, выполни задание:</p>
+
+        <div class="b-problem e-description">
+            <p>W3. Напиши программу, которая имитирует бросок кубика 
+            (генерирует случайное число от 1 до 6 и выводит его).</p>
+        </div>
+
+        <p>Подсказка: <span class="e-hint">чтобы получить случайное число, 
+            <span class="spoiler">есть функция mt_rand()</span>.</span></p>
+
+        <p>Код, заключенный в <code>/* ... */</code> — это комментарий, интерпретатор его проигнорирует, но в нем ты 
+            можешь оставить коллегам-программистам  какое-то полезное сообщение. Специальная последовательность символов
+            <code>\n</code> (работает только в строке с двойными кавычками) 
+            называется <dfn>перевод строки</dfn> и делает перенос текста на новую строку, без нее
+            все бы писалось в одну длинную-длинную строчку.</p>
+
+        <img src="../i/l1/l1-vars-problem.v2.png" alt="Задача на переменные">
+    </div>
+
+    <h2>Типы значений</h2>
+
+    <p>У значений, которые, например, хранятся в переменной, есть свой тип, например, число или строка. 
+        Разница между ними в том, что, например, числа складываются и вычитаются, а строки — нет. Узнать
+        тип значения в переменной можно, сделав <code>var_dump($x)</code> — она выведет и тип, и 
+        значение переменной. Всего в PHP 8 типов данных, вот они:<p>
+
+    <ul>
+        <li><code>int</code> и <code>float</code> — числа. Числа можно складывать, умножать, округлять, и т.д. Разница между 
+            этими 2 типами в том, что int хранит целые числа, а float — дробные. PHP сам преобразует
+            числа одного типа в другой, когда это надо, потому тебе беспокоиться об этом не надо.</li>
+        <li><code>string</code> — строка. Строки по идее нельзя сложить или умножить, потому при попытке это
+            сделать PHP сначала преобразует их в числа, а потом сложит/умножит получившиеся числа.</li>
+        <li><code>null</code> — специальный тип, обозначающий «пустое значение» или «ничто». Его можно
+            присвоить любой переменной, например <code>$x = null;</code>. Возможно, этот тип где-то пригодится,
+            потому он тут упомянут.</li>
+        <li><code>boolean</code>, <code>array</code>, <code>object</code> и <code>resource</code> мы 
+            будем изучать позже.</li>
+    </ul>
+
+    <p>Сделал задание? Молодец, переходи к следующему уроку.</p>
+
+    <div class="b-next-page">
+    <span class="m-label">дальше:</span>
+    <span class="m-link"><a href="../l1/conditions.html">Условия и игра в кубики</a>&nbsp;&rarr;</span>
+</div>    <div class="b-epilog">
+        <p>-----</p>
+                    <p><strong>Куда вводить код? Что надо скачать?</strong> Читай <a href="../">первый урок</a>.</p>    
+                <p><strong>Есть вопросы?</strong> Задай гуглу или автору.</p>
+        <p><strong>Нравится урок?</strong> Лайкай, репости, приглашай друзей, пости котов и Канако,
+             шли добра, решай задачи, помогай новичкам! Кнопок для лайка нет, кто хочет зарепостить, всегда может сделать это ручками.</p>
+        <p><strong>Как связаться с автором?</strong> <span class="spoiler"> Я хочу переодеть его в платье
+         школьницы и жениться на нем.</span> Ящик codedokode (кот) gmail.com ждет ваших писем.  А
+         <span style="color: #009; text-decoration: underline; cursor: pointer;">вконтактик</span> и 
+            <span style="color: #009; text-decoration: underline; cursor: pointer;">фейсбучек</span> ждут ваших лайков.
+         Но ответ на банальные вопросы лучше искать в Гугле или на stackoverflow.</p>
+        <p><strong>Я решил задачку!!!</strong> Молодец, делай следующий урок</p>
+                    <p><strong>Ideone не работает!11</strong> Ну так открой Гугл и найди сайты 
+            вроде https://repl.it/languages/php , http://phptester.net/ , 
+            http://sandbox.onlinephpfunctions.com/ , 
+            http://codepad.org/ или http://www.runphponline.com/ . Не ленись.</p>
+        
+        <p><strong>Почему так много рекламы?</strong> Всю рекламу
+        на сайте ставит юкоз (бесплатный хостинг же), а не я.</p>
+        <p>На сайте установлена система Google Analytics (и еще несколько аналогичных систем от юкоза). Данные о твоем IP-адресе, посещаемых страницах, 
+        времени посещения отправляются в Google Corporation, США. Хочу знать, кто и зачем сюда заходит. Поверь, 
+        другие сайты делают точно так же. Все сайты пишут логи.</p>
+    </div>
+    
+                
+
+        </div>
+    </div>        
+    <div class="l-sidebar">
+
+        <ul class="b-main-menu vlist">
+                                                                                        <li>
+                                            <a href="../">Начало</a>
+                                    </li>
+                                                                                                
+                                                    <li><ul class="vlist b-menu-l1">
+                                                            <li class='active'>
+                                            <span>Переменные                            <ins class="dec-l"></ins><ins class="dec-r"></ins></span>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/conditions.html">Условия и игра в кубики</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/loops.html">Циклы и айфон в кредит</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/arrays.html">Массивы и рулетка</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/strings.html">Строки, хакеры и шифровки</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/functions.html">Функции и новый айпад</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/regexp.html">Регулярные выражения</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/finals.html">Повторим?</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/mou-ikkai.html">Бонусные задачки</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/pasta.html">Пасты и ООП</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/reading-list.html">Учим сами</a>
+                                    </li>
+                                                                                                                            </ul></li>
+                                                            <li class='separated'>
+                                            <a href="../tsuzuke.html">Что делать дальше?</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../i-am-smart.html">Я у мамы умный</a>
+                                    </li>
+                                
+                    </ul>
+
+        <div class="b-block small-font">
+            <h2>Что это?</h2>
+            
+            <p>Это сайт, где собраны простые 
+                уроки по языку программирования
+                                PHP. 
+                                Даже если ты никогда
+                не слышал слова 
+                «программирование» и учишься
+                на филолога, ты можешь 
+                попробовать их сделать.
+                </p>
+
+            <p>Скачивать и устанавливать тоже
+                ничего не надо, делать уроки 
+                можно даже с айпада или 
+                ведроида.</p>
+        </div>
+
+            </div>
+
+    
+    
+    <script type="text/javascript">
+
+        var SCOPE_PAGE_LEVEL = 3;
+
+        window._gaq = window._gaq || [];
+        _gaq.push(['_setAccount', 'UA-34859509-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        
+        /* outbound link click tracking to check whether anyone uses those links */
+        (function() {
+            function startsWith(str, substr) {
+                return str.substr(0, substr.length) == substr;
+            }
+            
+            function addEvent(node, evt, fn) {
+                if (node.addEventListener) {
+                    node.addEventListener(evt, fn, false);
+                } else {
+                    node.attachEvent('on' + evt, fn);
+                }
+            }
+        
+            var links = document.getElementsByTagName('a');
+            var baseUrl = 'http://' + location.host;
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                
+                if (link.href != baseUrl && !startsWith(link.href, baseUrl + '/')) {
+                    // Is an external link
+                    addEvent(link, 'mousedown', function(ev) { 
+                        window._gaq = window._gaq || [];
+                        var e = ev || window.event;
+                        var link = e.target || e.srcElement;
+                        var text = link.innerText || link.textContent || 'no text';
+                        if (text.length > 20) {
+                            text = text.substr(0, 20) + '…';
+                        }
+                        var linkInfo = link.href + ' (' +  text + ')';
+                        window._gaq.push(['_trackEvent', 'flow', 'link', linkInfo]);
+                    });
+                }
+            }
+        })();
+
+        /* poor man's error logger */
+        (function () {
+            var errorsReported = 0;
+            var MAX_ERRORS = 5;
+            
+            window.onerror = function (text, file, line) {
+
+                if (errorsReported > MAX_ERRORS) {
+                    return;
+                }
+
+                errorsReported++;
+
+                window._gaq = window._gaq || [];
+                var errorInfo = (text || '(no text)') + ' @ ' + (file || '(no file)') + 
+                    ', line ' + (line || '(no line)');
+                window._gaq.push(['_trackEvent', 'error', 'onerror', errorInfo]);
+            };
+        })();
+    </script>
+</body>
+</html>

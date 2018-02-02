@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Другое начало — Хаскелл с нуля (на самом деле PHP)</title>
+    <link rel="apple-touch-icon" href="./phpbook-favicon-128.png">
+        <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="./phpbook-favicon-128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="./phpbook-favicon-64.png" sizes="64x64">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="l-content-wrap">
+        <div class="l-content">
+
+
+
+            <style type="text/css">
+    /* html { background: url('./i/ha/cats.png') repeat 0 0; } */
+    </style>
+
+    <h1 class="lifted-up">Другое начало</h1>
+
+    <div class="b-teaser">
+        <p>Привет! У нас собраны уроки по программированию, то есть написанию программ. 
+        Уроки рассчитаны на абсолютного новичка, который, может, и слова «монада» в жизни
+        ни разу не слышал. Уроки разбиты на уровни, первый уровень — основы языка Haskell.</p>
+
+        <p>Уроки очень простые, в каждом немного теории и задачки, которые
+            нужно решать для ее закрепления. Ничего сложного! Присоединяйся!</p>
+    </div>
+
+    <p><strong>Требуемые знания:</strong> достаточно умения включать компьютер и пользоваться браузером. 
+    Ноутбук/айпад/планшет/смартфон тоже подходят, если в них есть интернет.</p>
+
+    <p><strong>Зачем это нужно?</strong> На Haskell (если у тебя хватит терпения пройти все уроки) 
+    можно решать как простые, так и сложные математические задачи, например, вычисление чисел Фибоначчи. Ну или
+    можно легко удивить окружающих, бросив небрежно «А, кстати, я иногда пишу код на Хаскелле». Также, 
+    Хаскелл — ленивый выразительный язык, и с его помощью ты тоже можешь стать более ленивым и выразительным.
+    Да и просто немного напрячь мозги полезно, согласись?</p>
+
+    <p><strong>Как происходит обучение?</strong> Просто — читай уроки, смотри картинки,
+    следуй инструкциям, делай задания, задавай вопросы.</p>    
+
+    <img src="./i/ha/ha-1-sensei.jpg" alt="Первый урок" class="o-seamless">
+    
+    <h2>Немного о Хаскелле</h2>
+
+    <p>Что такое <dfn>Хаскелл</dfn>? Язык программирования.</p>
+
+    <p>Что такое <dfn>программа</dfn>? Это обычный текст, в котором записан набор инструкций, 
+    говорящий компьютеру, что ему делать. Программист пишет программу, а компилятор переводит (компилирует) ее в 
+    понятные процессору коды, после чего программа запускается и выполняется. Иногда текст программы тоже
+    называют <dfn>код</dfn>. Что может делать программа? Да все, что угодно. Профит!</p>
+    
+    <p><strong>Каким образом пишется программа?</strong> Любым, который нравится программисту. Ты можешь 
+    использовать блокнот (не советую), а можешь скачать продвинутый редактор вроде 
+    <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a> или 
+    <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> (советую). Продвинутые редакторы 
+    подсвечивают код разными цветами и содержат кучу функций для его редактирования. Нам же пока хватит 
+    сайта ideone.com . Но ближе к концу курса стоит все же скачать и освоить хотя бы Notepad++.</p>
+    
+    <p>Поскольку устанавливать всякие программы и, тем более, ковыряться в командной строке (это такое
+    черное окошечко с белыми буквами, где можно писать команды) — слишком сложно для начинающего,
+    мы будем использовать вначале более простой способ запускать свои творения.</p>
+ 
+    <p>Для этого заходи на сайт <span title="Да, ссылка не кликабельна, не ленись, пиши ручками">http://ideone.com/</span> .
+    Там ты можешь набрать текст программы, нажать кнопку, и увидеть результат его работы. 
+    То есть то, что ты туда вбиваешь, отправляется на их сервер и передается компилятору Haskell, код 
+    компилируется и выполняется, а тебе выводится результат его работы. Естественно, ты можешь после этого
+    скопировать ссылочку и показать всем друзяшкам из вконтактика, как круто работает твоя программа. 
+    Что может быть удобнее? <span class="spoiler">А вот раньше, ребята, не было никаких вконтактиков, 
+    компьютеры были размером с грузовик, а программы набивали дырочками на перфокартах</span></p>
+
+    <p>Ideone сломался и не открывается? Попробуй зайти на альтернативный сервис: http://codepad.org/</p>
+
+    <p>Ладно, сколько можно читать теорию, давай начинать кодить!</p>
+    
+    <div class="b-problem">
+        Напиши программу, выводящую какой-нибудь текст. Обычно первая программа выводит текст вроде 
+        «Hello World» («Привет, Мир»).
+    </div>    
+
+    <p>Упс! Ты же, наверно, не знаешь, как это сделать. Держи инструкцию: </p>
+
+    <img src="./i/ha/ha-w001.png" alt="Как запустить программу на Haskell">
+
+    <p>Если что-то не работает (или вместо результата ты видишь похожие на заклинания сообщения об ошибках), 
+        перепроверь свою программу. Программирование — точная наука (ой? это наука?)
+        и нельзя просто так взять и заменить большую букву на маленькую или одинарную кавычку на двойную. Слово
+        <code>putStrLn</code> пишется с большой «S» и большой «L». Кавычки должны быть двойные (они находятся
+        на клавиатуре около клавиши Enter): </p>
+
+    <img src="./i/ha/l0-quotes-key.jpg" alt="Кавычки на клавиатуре">
+
+    <p>Если ты мучался-мучался, мучался-мучался и вопреки известной поговорке ничего тк и не получилось, 
+        держи ссылочку на работающую программу:
+        <a href="http://ideone.com/HoYEms" target="_blank">http://ideone.com/HoYEms</a> . Можешь взять ее
+        за основу.</p>
+
+    <h2>Давай разберем, что мы понаписали.</h2>
+
+    <div style="float: right; margin: 0 -250px 10px 10px; border-right: 1px solid #ccc;">
+    <img src="./i/ha/ha-cirno.jpg" alt="А что такое Хаскелл?" 
+        style="vertical-align: top;" id="cirnoImage">
+    </div>
+
+
+    <p>В Хаскелл программа состоит из кусочков — функций. Каждая из них делает какую-то свою часть задачи. 
+        После того, как функция определена (то есть, после того, как ты ее написал), ее можно вызвать, чтобы 
+        она что-то сделала. Функции определяются с помощью такого кода:</p>
+
+    <p><code>functionName = ....</code></p>
+
+    <p>То есть, слева мы пишем имя функции (мы его придумываем сами), потом знак «равно», а справа — что она 
+        делает. <code>main</code> — это особое имя, функция с таким именем вызывается при запуске
+         программы (и потому она должна в ней обязательно быть). То есть, наша программа состоит из 
+         единственной функции main.</p>
+
+    <p>А что такое <code>putStrLn</code>? Это встроенная функция (написанная не нами, а идущая в комплекте с 
+        компилятором), которая выводит переданную ей строку с текстом. Строка, которую надо вывести, идет 
+        сразу после названия <code>putStrLn</code> . Таким образом, мы сделали программу из одной функции, 
+        которая лишь выводит одну строчку. Ну, для начала, думаю, неплохо.</p>
+
+    <p>Ты наверно заметил, что слово «функция» встречается в каждом предложении. Неудивительно, ведь Хаскелл —
+        функциональный язык программирования. Больше функций — 
+        в <a href="./ha/functions.html">следующем уроке</a>!</p>
+
+<script type="text/javascript" src="./js/ha-2.js"></script>
+<script type="text/javascript">
+(function () {
+    var layers = [
+        { img: 'hair/bottom1.png', maxAngle: 4.5, mass: 1.07, color: '#0f0' },
+        { img: 'hair/bottom2.png', maxAngle: 4, mass: 0.98, color: '#099' },
+        { img: 'hair/head.png', still: true },
+        { img: 'hair/eye-l-1.png', still: true, part: 'left', phase: 1 },
+        { img: 'hair/eye-l-2.png', still: true, part: 'left', phase: 2 },
+        { img: 'hair/eye-l-3.png', still: true, part: 'left', phase: 3 },
+        { img: 'hair/eye-l-4.png', still: true, part: 'left', phase: 4 },
+        { img: 'hair/eye-r-1.png', still: true, part: 'right', phase: 1 },
+        { img: 'hair/eye-r-2.png', still: true, part: 'right', phase: 2 },
+        { img: 'hair/eye-r-3.png', still: true, part: 'right', phase: 3 },
+        { img: 'hair/eye-r-4.png', still: true, part: 'right', phase: 4 },
+        { img: 'hair/mid1.png', maxAngle: 5.7, mass: 0.95, color: '#f90' },
+        { img: 'hair/mid2.png', maxAngle: 4.6, mass: 1.14, color: '#90f' },
+        { img: 'hair/hand.png', still: true },
+        { img: 'hair/left2.png', maxAngle: 6.5, mass: 1.1, color: '#99f' },
+        { img: 'hair/left1.png', maxAngle: 5.2, mass: 0.8, color: '#f60' },
+        { img: 'hair/hair7.png', maxAngle: 4.2, mass: 1.12, color: '#70f' },
+        { img: 'hair/hair6.png', maxAngle: 4.6, mass: 1.03, color: '#0ff' },
+        { img: 'hair/hair5.png', maxAngle: 4.9, mass: 0.93, color: '#707' },
+        { img: 'hair/hair4.png', maxAngle: 6.5, mass: 0.95, color: '#7af' },
+        { img: 'hair/hair3.png', maxAngle: 5.5, mass: 0.97, color: '#f0f' },
+        { img: 'hair/hair2.png', maxAngle: 5.4, mass: 1.05, color: '#ff0' },
+        { img: 'hair/hair1.png', maxAngle: 5.2, mass: 1, color: '#f00' },
+        { img: 'hair/fore3.png', maxAngle: 5.2, mass: 0.7, color: '#f03' },
+        { img: 'hair/fore2.png', maxAngle: 5.1, mass: 0.65, color: '#0f3' },
+        { img: 'hair/fore1.png', maxAngle: 4.7, mass: 0.62, color: '#03f' },
+        { img: 'hair/eyebrows.png', still: true, part: 'eyebrows' }
+    ];
+
+    var spriteImageData = {"hair\/bottom1.png":{"cx":117,"cy":104,"left":107,"top":97,"w":21,"h":78,"posX":0,"posY":0,"sprite":"sprite1.png"},"hair\/bottom2.png":{"cx":111,"cy":101,"left":106,"top":93,"w":14,"h":73,"posX":0,"posY":83,"sprite":"sprite1.png"},"hair\/eye-l-1.png":{"cx":-1,"cy":-1,"left":118,"top":104,"w":19,"h":9,"posX":0,"posY":161,"sprite":"sprite1.png"},"hair\/eye-l-2.png":{"cx":-1,"cy":-1,"left":117,"top":99,"w":23,"h":18,"posX":0,"posY":175,"sprite":"sprite1.png"},"hair\/eye-l-3.png":{"cx":-1,"cy":-1,"left":117,"top":99,"w":24,"h":31,"posX":0,"posY":198,"sprite":"sprite1.png"},"hair\/eye-l-4.png":{"cx":-1,"cy":-1,"left":117,"top":98,"w":54,"h":40,"posX":0,"posY":234,"sprite":"sprite1.png"},"hair\/eye-r-1.png":{"cx":-1,"cy":-1,"left":151,"top":110,"w":29,"h":14,"posX":0,"posY":279,"sprite":"sprite1.png"},"hair\/eye-r-2.png":{"cx":-1,"cy":-1,"left":147,"top":108,"w":36,"h":28,"posX":0,"posY":298,"sprite":"sprite1.png"},"hair\/eye-r-3.png":{"cx":-1,"cy":-1,"left":146,"top":109,"w":38,"h":31,"posX":0,"posY":331,"sprite":"sprite1.png"},"hair\/eye-r-4.png":{"cx":-1,"cy":-1,"left":146,"top":103,"w":38,"h":37,"posX":0,"posY":367,"sprite":"sprite1.png"},"hair\/eyebrows.png":{"cx":-1,"cy":-1,"left":117,"top":84,"w":65,"h":17,"posX":0,"posY":409,"sprite":"sprite1.png"},"hair\/fore1.png":{"cx":130,"cy":38,"left":122,"top":38,"w":12,"h":71,"posX":0,"posY":431,"sprite":"sprite1.png"},"hair\/fore2.png":{"cx":144,"cy":50,"left":129,"top":47,"w":26,"h":85,"posX":0,"posY":507,"sprite":"sprite1.png"},"hair\/fore3.png":{"cx":156,"cy":57,"left":151,"top":57,"w":15,"h":57,"posX":0,"posY":597,"sprite":"sprite1.png"},"hair\/hair1.png":{"cx":195,"cy":71,"left":163,"top":70,"w":33,"h":92,"posX":0,"posY":659,"sprite":"sprite1.png"},"hair\/hair2.png":{"cx":200,"cy":77,"left":170,"top":72,"w":31,"h":109,"posX":0,"posY":756,"sprite":"sprite1.png"},"hair\/hair3.png":{"cx":206,"cy":84,"left":182,"top":76,"w":26,"h":95,"posX":0,"posY":870,"sprite":"sprite1.png"},"hair\/hair4.png":{"cx":205,"cy":88,"left":188,"top":84,"w":22,"h":86,"posX":0,"posY":970,"sprite":"sprite1.png"},"hair\/hair5.png":{"cx":212,"cy":82,"left":194,"top":82,"w":22,"h":92,"posX":0,"posY":1061,"sprite":"sprite1.png"},"hair\/hair6.png":{"cx":215,"cy":88,"left":208,"top":88,"w":13,"h":75,"posX":0,"posY":1158,"sprite":"sprite1.png"},"hair\/hair7.png":{"cx":223,"cy":85,"left":216,"top":84,"w":11,"h":61,"posX":0,"posY":1238,"sprite":"sprite1.png"},"hair\/hand.png":{"cx":-1,"cy":-1,"left":78,"top":129,"w":32,"h":74,"posX":0,"posY":1304,"sprite":"sprite1.png"},"hair\/head.png":{"cx":-1,"cy":-1,"left":57,"top":23,"w":184,"h":171,"posX":0,"posY":0,"sprite":"sprite2.png"},"hair\/left1.png":{"cx":99,"cy":59,"left":71,"top":58,"w":34,"h":47,"posX":0,"posY":1383,"sprite":"sprite1.png"},"hair\/left2.png":{"cx":105,"cy":63,"left":86,"top":59,"w":24,"h":77,"posX":0,"posY":1435,"sprite":"sprite1.png"},"hair\/mid1.png":{"cx":104,"cy":74,"left":95,"top":74,"w":19,"h":80,"posX":0,"posY":1517,"sprite":"sprite1.png"},"hair\/mid2.png":{"cx":114,"cy":73,"left":102,"top":62,"w":25,"h":96,"posX":0,"posY":1602,"sprite":"sprite1.png"}};;
+
+    if (!spriteImageData) {
+        throw "No spriteImageData";
+    }
+
+    var maxAngleMultiplier = 1;
+    var speedMultiplier = 1;
+    var multiRes = 1;
+    var multiAcc = 1;
+    var multiGrav = 1;
+    var imageNode = document.getElementById('cirnoImage');
+
+    var ctrl = window.haStartGlaring({
+        useSprite: true,
+        spritePrefix: './i/ha/glare/',
+        spriteImageData: spriteImageData,
+        bgColor: '#ffffff',
+        layers: layers,
+        imageNode: imageNode,
+        onInit: null,
+        onEnterFrame: null,
+        onEachPoint: null,
+        pauseImageUrl: './i/ha/glare/ha-pause.png',
+        maxAngleMultiplier: maxAngleMultiplier,
+        multiRes: multiRes,
+        multiAcc: multiAcc,
+        multiGrav: multiGrav,
+        speedMultiplier: speedMultiplier,
+        saveStateId: 'isUserStopped',
+        baseImage: 'hair/base.jpg',
+        headImage: 'hair/head.png'
+    });
+})();    
+</script>
+<div class="b-next-page">
+    <span class="m-label">дальше:</span>
+    <span class="m-link"><a href="./ha/functions.html">Функции</a>&nbsp;&rarr;</span>
+</div>    <div class="b-epilog">
+        <p>-----</p>
+                    <p><strong>Куда вводить код? Что надо скачать?</strong> Читай <a href="./">первый урок</a>.</p>    
+                <p><strong>Есть вопросы?</strong> Задай гуглу или автору.</p>
+        <p><strong>Нравится урок?</strong> Лайкай, репости, приглашай друзей, пости котов и Канако,
+             шли добра, решай задачи, помогай новичкам! Кнопок для лайка нет, кто хочет зарепостить, всегда может сделать это ручками.</p>
+        <p><strong>Как связаться с автором?</strong> <span class="spoiler"> Я хочу переодеть его в платье
+         школьницы и жениться на нем.</span> Ящик codedokode (кот) gmail.com ждет ваших писем.  А
+         <span style="color: #009; text-decoration: underline; cursor: pointer;">вконтактик</span> и 
+            <span style="color: #009; text-decoration: underline; cursor: pointer;">фейсбучек</span> ждут ваших лайков.
+         Но ответ на банальные вопросы лучше искать в Гугле или на stackoverflow.</p>
+        <p><strong>Я решил задачку!!!</strong> Молодец, делай следующий урок</p>
+        
+        <p><strong>Почему так много рекламы?</strong> Всю рекламу
+        на сайте ставит юкоз (бесплатный хостинг же), а не я.</p>
+        <p>На сайте установлена система Google Analytics (и еще несколько аналогичных систем от юкоза). Данные о твоем IP-адресе, посещаемых страницах, 
+        времени посещения отправляются в Google Corporation, США. Хочу знать, кто и зачем сюда заходит. Поверь, 
+        другие сайты делают точно так же. Все сайты пишут логи.</p>
+    </div>
+                    
+
+        </div>
+    </div>        
+    <div class="l-sidebar">
+
+        <ul class="b-main-menu vlist">
+                                                                                        <li>
+                                            <a href="./">Начало</a>
+                                    </li>
+                                                                                        <li class='separated'>
+                                            <a href="./tsuzuke.html">Что делать дальше?</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="./i-am-smart.html">Я у мамы умный</a>
+                                    </li>
+                                                    
+                    </ul>
+
+        <div class="b-block small-font">
+            <h2>Что это?</h2>
+            
+            <p>Это сайт, где собраны простые 
+                уроки по языку программирования
+                                Haskell.
+                                Даже если ты никогда
+                не слышал слова 
+                «программирование» и учишься
+                на филолога, ты можешь 
+                попробовать их сделать.
+                </p>
+
+            <p>Скачивать и устанавливать тоже
+                ничего не надо, делать уроки 
+                можно даже с айпада или 
+                ведроида.</p>
+        </div>
+
+            </div>
+
+    
+    
+    <script type="text/javascript">
+
+        var SCOPE_PAGE_LEVEL = 3;
+
+        window._gaq = window._gaq || [];
+        _gaq.push(['_setAccount', 'UA-34859509-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        
+        /* outbound link click tracking to check whether anyone uses those links */
+        (function() {
+            function startsWith(str, substr) {
+                return str.substr(0, substr.length) == substr;
+            }
+            
+            function addEvent(node, evt, fn) {
+                if (node.addEventListener) {
+                    node.addEventListener(evt, fn, false);
+                } else {
+                    node.attachEvent('on' + evt, fn);
+                }
+            }
+        
+            var links = document.getElementsByTagName('a');
+            var baseUrl = 'http://' + location.host;
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                
+                if (link.href != baseUrl && !startsWith(link.href, baseUrl + '/')) {
+                    // Is an external link
+                    addEvent(link, 'mousedown', function(ev) { 
+                        window._gaq = window._gaq || [];
+                        var e = ev || window.event;
+                        var link = e.target || e.srcElement;
+                        var text = link.innerText || link.textContent || 'no text';
+                        if (text.length > 20) {
+                            text = text.substr(0, 20) + '…';
+                        }
+                        var linkInfo = link.href + ' (' +  text + ')';
+                        window._gaq.push(['_trackEvent', 'flow', 'link', linkInfo]);
+                    });
+                }
+            }
+        })();
+
+        /* poor man's error logger */
+        (function () {
+            var errorsReported = 0;
+            var MAX_ERRORS = 5;
+            
+            window.onerror = function (text, file, line) {
+
+                if (errorsReported > MAX_ERRORS) {
+                    return;
+                }
+
+                errorsReported++;
+
+                window._gaq = window._gaq || [];
+                var errorInfo = (text || '(no text)') + ' @ ' + (file || '(no file)') + 
+                    ', line ' + (line || '(no line)');
+                window._gaq.push(['_trackEvent', 'error', 'onerror', errorInfo]);
+            };
+        })();
+    </script>
+</body>
+</html>

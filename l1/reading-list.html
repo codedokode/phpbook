@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Учимся писать веб-приложения — PHP с нуля</title>
+    <link rel="apple-touch-icon" href="../phpbook-favicon-128.png">
+        <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="../phpbook-favicon-128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="../phpbook-favicon-64.png" sizes="64x64">
+    <link href="../style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="l-content-wrap">
+        <div class="l-content">
+
+
+
+            <h1 class="lifted-up">Учимся писать веб-приложения</h1>
+    
+    <div class="b-teaser">После того, как мы освоили язык PHP, пора научиться применять 
+    его на практике - писать веб-приложения (то есть интерактивные сайты). К сожалению, 
+    написание серии уроков 2-го уровня затягивается, потому пока у нас есть задачи 
+    (с комментариями), а вот теории и уроков маловато.</div>
+
+    <p>Итак, вот список тем, с которыми надо познакомиться, уроков, которые надо изучить, 
+    и, самое главное - задач, которые надо решить:</p>
+
+    <h2>Изучаем веб-сервер и устанавливаем PHP</h2>
+
+    <p>Для начала, надо научиться выводить результат выполнения программы на PHP 
+    в браузер в виде веб-страницы. Для этого придется изучить, как работает браузер и 
+    веб-сервера, познакомиться с протоколом HTTP. Надо будет прочесть:</p>
+
+    <p><a href="https://github.com/codedokode/pasta/blob/master/soft/web-server.md" 
+    target="_blank">Урок по веб-серверам, протоколу HTTP и использованию 
+    PHP для генерации страниц</a>.</p>
+
+    <p>Возможно, придется также прочитать эти уроки:</p>
+
+    <ul>
+        <li><a href="https://github.com/codedokode/pasta/blob/master/soft/php-install.md" target="_blank">Как установить PHP на компьютер</a></li>
+        <li><a href="https://github.com/codedokode/pasta/blob/master/soft/apache-install.md" target="_blank">Как установить Апач на компьютер</a></li>
+        <li>Маленький туториал от разработчиков PHP: <a href="http://php.net/manual/ru/tutorial.php" target="_blank">http://php.net/manual/ru/tutorial.php</a></li>
+    </ul>
+
+    <p>При установке PHP или Апача может понадобиться пользоваться командной строкой. 
+    На этот случай у нас есть <a href="https://github.com/codedokode/pasta/blob/master/soft/cli.md" target="_blank">урок по использованию командной строки</a>.</p>
+
+    <p>При верстке веб-страниц используются языки HTML и CSS и их надо освоить хотя бы на начальном уровне. Не надо бояться, они относительно простые и изучить их проще, чем PHP.
+    У нас нет своего большого учебника по ним, а есть небольшой курс, который содержит 
+    ссылки на другие учебники, краткие пояснения и самое главное - задачи, 
+    каждая из которых помогает понять ту или иную особенность верстки. Итак, вот он:</p>
+
+    <p><a href="https://github.com/codedokode/pasta/blob/master/html/html.md" target="_blank">Курс для изучения основ верстки и HTML/CSS</a></p>
+
+    <p>HTML/CSS можно изучать параллельно с написанием веб-приложений на PHP, чтобы не 
+    терять время.</p>
+
+    <p>Ах да, ты еще не начал изучать английский? Тогда начинай. Стать 
+    профессиональным разработчиком без английского будет сложно.</p>
+
+    <h2>Пробуем писать более сложные приложения</h2>
+
+    <p>Теперь можно переходить от написания отдельных страниц к интерактивным 
+    простым сайтам. Для начала надо решить первую и очень важную задачу 
+    под названием "Список абитуриентов":</p>
+
+    <p><a href="https://github.com/codedokode/pasta/blob/master/student-list.md" target="_blank">https://github.com/codedokode/pasta/blob/master/student-list.md</a></p>
+
+    <p>В этой задаче требуется фактически сделать простой сайт с регистрацией и выводом
+    списка пользователей, который хранится в базе данных. К этой задаче приложены 
+    комментарии, где подробно описано, как она решается. Задача поможет 
+    изучить архитектуру MVC, принцип Dependency Injection, способы взаимодействия 
+    с базой данных.</p>
+
+    <p>К сожалению, в сети много плохих учебников по PHP. Некоторые из них не учат 
+    правильной архитектуре и умению писать аккуратный, понятный код, 
+    некоторые не учат тому, как избежать уязвимостей. Наша задача позволяет все это 
+    изучить, потому ее стоит решить тем, кто учился по каким-то другим учебникам.</p>
+
+    <p>Решение задачи желательно выложить на Гитхаб (или аналогичный сайт), где его 
+    смогут увидеть все желающие. Github - это сайт, который позволяет создавать на нем  
+    git-репозитории (хранилища кода), и загружать туда свой код. Для этого надо изучить 
+    программу для работы с git-репозиториями под названием git. Она подробно 
+    описана на русском языке в Git Book: 
+    <a href="https://git-scm.com/book/ru/v2" target="_blank">https://git-scm.com/book/ru/v2</a></p>
+
+    <p>В задаче используется база данных. У нас есть что-то вроде небольшого урока по 
+    базам данных и языку SQL: <a href="https://gist.github.com/codedokode/10539213" target="_blank">https://gist.github.com/codedokode/10539213</a></p>
+
+    <p>Для взаимодействия с базой данных я советую изучить расширение PDO.</p>
+
+    <p>Эту задачу важно решить. Если с ней возникли какие-то сложности, то под задачей
+    идут подробные пояснения, а также написано, где можно посмотреть решения этой задачи 
+    (но стоит сначала попытаться написать код самому).</p>
+
+    <h2>Осваиваем фреймворки</h2>
+
+    <p>Задача про абитуриентов учит писать простые веб-приложения с нуля. Но реальные 
+    проекты обычно пишут на основе <dfn>фреймворков</dfn> - специальных библиотек, 
+    которые содержат основу, каркас приложения. Это позволяет избежать 
+    "изобретения велосипеда и позволяет использовать готовый код, а также 
+    грамотно организовать архитектуру приложения. Мы начнем с изучения относительно
+    несложных микрофреймворков, для этого у нас есть задача:</p>
+
+    <p><a href="https://gist.github.com/codedokode/9424217" target="_blank">Задача на создание файлообменника на микрофреймворке</a></p>
+
+    <p>Параллельно с решением задачи стоит продолжить изучать верстку. Кроме HTML и CSS, 
+    надо знать еще язык Javascript - он позволяет внедрять в страницы простые программки
+    (<dfn>скрипты</dfn>, которые делают ее более интерактивной). У нас есть 
+    <a href="https://gist.github.com/codedokode/ce30e7a036f18f416ae0" target="_blank">
+    курс задач по языку javascript</a>. Там же дана ссылка на учебник по JS 
+    (learn.javascript.ru) и автоматизированную проверялку для части задач.</p>
+
+    <p>Также, эта задача - хороший повод познакомиться с ORM, в случае PHP главный 
+    ORM - это Doctrine. Ее конечно не обязательно использовать, но с ней решать 
+    задачу будет интереснее.</p>
+
+    <p>Для установки библиотек и фреймворков стоит использовать composer.</p>
+
+    <h2>Переходим к сложным приложениям</h2>
+
+    <p> Далее пора познакомиться с большими фреймворками и попробовать написать что-то,
+    что по сложности и объему соответствует реальным проектам. У нас есть задача и для этого: 
+    </p>
+
+    <p><a href="https://gist.github.com/codedokode/8733007" target="_blank">Задача про сайт TestHub</a></p>
+
+    <p>Я рекомендую решать ее с использованием Symfony (или же с использованием 
+    отдельных компонент Симфони) и ORM Doctrine. Это непросто, но даст много полезных 
+    навыков и знаний.</p>
+
+    <p>Написанный код надо тестировать. Обычно мы это делали вручную, открывая страницы и
+     нажимая кнопочки, но со временем эта рутина начинает надоедать. Значит, надо осваивать 
+     автоматизированное тестирование, и у нас есть урок на эту тему: </p>
+
+    <p><a href="https://gist.github.com/codedokode/a455bde7d0748c0a351a" target="_blank">Автоматизированное тестирование</a></p>
+
+    <h2>Дополнительное чтение</h2>
+
+    <p>Вот еще список ссылок, которые стоит почитать:</p>
+
+    <ul>
+        <li>Официальный мануал, который должен быть у тебя на первом месте по числу посещений:
+            <a href="http://www.php.net/manual/ru/langref.php" target="_blank">http://www.php.net/manual/ru/langref.php</a>
+        </li>        
+        <li>Сайт про "правильный" PHP: <a href="http://getjump.me/ru-php-the-right-way/" target="_blank">http://getjump.me/ru-php-the-right-way/</a></li>
+        <li>Мой гитхаб, где выкладываются самые новые уроки и черновики: 
+        <a href="https://github.com/codedokode/pasta/" target="_blank">https://github.com/codedokode/pasta/</a></li>
+        <li>Почитать про паттерны проектирования
+        <a href="http://designpatternsphp.readthedocs.org/ru/latest/README.html" target="_blank">http://designpatternsphp.readthedocs.org/ru/latest/README.html</a> (если ты не изучил ни одного фреймворка, то это будет рановато). Имей в виду что без примеров использования их учить бесполезно - не поймешь, хочешь увидеть примеры использования паттернов - ковыряй исходники Симфони, например Symfony Forms. Не заучивай паттерны - смотри код и думай, зачем тут они использованы. Не усложняй код! Ты не должен использовать все паттерны 
+        подряд без необходимости!</li>
+        <li>Также, я советую учиться решать олимпиадные задачи. Они помогают 
+        находить правильные алгоритмы, оптимизировать код. Есть хороший сайт, где 
+        представлены задачи самой разной сложности и есть возможность проверки решения:
+        <a href="http://codeforces.com/problemset" target="_blank">
+            http://codeforces.com/problemset</a>
+        </li>
+        <li>Также, есть такой учебник по алгоритмам и структурам данных: 
+        <a href="http://aliev.me/runestone/" target="_blank">http://aliev.me/runestone/</a></li>
+    </ul>
+
+    <h2>Хочется поломать голову?</h2>
+
+    <p>Пройдя все задачи выше, ты скорее всего станешь неплохим начинающим разработчиком. 
+    Однако, наверняка тебе захочется решить что-то посложнее, задачу, на которой 
+    споткнутся даже опытные программисты. Ну разумеется, у нас есть 
+    такая задача! Сейчас (в конце 2016 года) много внимания уделяется написанию клиентских 
+    ("одностраничных") приложений, на слуху названия вроде Angular или React, и у нас 
+    есть задачка по теме:</p>
+
+    <p><a href="https://github.com/codedokode/pasta/blob/master/js/spa.md" target="_blank">Сложная задача на написание SPA приложения</a></p>
+
+    <p>Она довольно сложная, и пока даже автор не представляет полностью, как ее 
+    лучше решить. Увы, не понаступав на грабли, и не попробовав разные подходы, 
+    это не понять. (Кстати, автор хочет похвастаться: он участвовал в написании 
+    одностраничных приложений когда это еще не было в тренде).</p>
+
+        <div class="b-epilog">
+        <p>-----</p>
+                    <p><strong>Куда вводить код? Что надо скачать?</strong> Читай <a href="../">первый урок</a>.</p>    
+                <p><strong>Есть вопросы?</strong> Задай гуглу или автору.</p>
+        <p><strong>Нравится урок?</strong> Лайкай, репости, приглашай друзей, пости котов и Канако,
+             шли добра, решай задачи, помогай новичкам! Кнопок для лайка нет, кто хочет зарепостить, всегда может сделать это ручками.</p>
+        <p><strong>Как связаться с автором?</strong> <span class="spoiler"> Я хочу переодеть его в платье
+         школьницы и жениться на нем.</span> Ящик codedokode (кот) gmail.com ждет ваших писем.  А
+         <span style="color: #009; text-decoration: underline; cursor: pointer;">вконтактик</span> и 
+            <span style="color: #009; text-decoration: underline; cursor: pointer;">фейсбучек</span> ждут ваших лайков.
+         Но ответ на банальные вопросы лучше искать в Гугле или на stackoverflow.</p>
+        <p><strong>Я решил задачку!!!</strong> Молодец, делай следующий урок</p>
+                    <p><strong>Ideone не работает!11</strong> Ну так открой Гугл и найди сайты 
+            вроде https://repl.it/languages/php , http://phptester.net/ , 
+            http://sandbox.onlinephpfunctions.com/ , 
+            http://codepad.org/ или http://www.runphponline.com/ . Не ленись.</p>
+        
+        <p><strong>Почему так много рекламы?</strong> Всю рекламу
+        на сайте ставит юкоз (бесплатный хостинг же), а не я.</p>
+        <p>На сайте установлена система Google Analytics (и еще несколько аналогичных систем от юкоза). Данные о твоем IP-адресе, посещаемых страницах, 
+        времени посещения отправляются в Google Corporation, США. Хочу знать, кто и зачем сюда заходит. Поверь, 
+        другие сайты делают точно так же. Все сайты пишут логи.</p>
+    </div>
+    
+                
+
+        </div>
+    </div>        
+    <div class="l-sidebar">
+
+        <ul class="b-main-menu vlist">
+                                                                                        <li>
+                                            <a href="../">Начало</a>
+                                    </li>
+                                                                                                
+                                                    <li><ul class="vlist b-menu-l1">
+                                                            <li>
+                                            <a href="../l1/variables.html">Переменные</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/conditions.html">Условия и игра в кубики</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/loops.html">Циклы и айфон в кредит</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/arrays.html">Массивы и рулетка</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/strings.html">Строки, хакеры и шифровки</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/functions.html">Функции и новый айпад</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/regexp.html">Регулярные выражения</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/finals.html">Повторим?</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/mou-ikkai.html">Бонусные задачки</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../l1/pasta.html">Пасты и ООП</a>
+                                    </li>
+                                                                                        <li class='active'>
+                                            <span>Учим сами                            <ins class="dec-l"></ins><ins class="dec-r"></ins></span>
+                                    </li>
+                                                                                                                            </ul></li>
+                                                            <li class='separated'>
+                                            <a href="../tsuzuke.html">Что делать дальше?</a>
+                                    </li>
+                                                                                        <li>
+                                            <a href="../i-am-smart.html">Я у мамы умный</a>
+                                    </li>
+                                
+                    </ul>
+
+        <div class="b-block small-font">
+            <h2>Что это?</h2>
+            
+            <p>Это сайт, где собраны простые 
+                уроки по языку программирования
+                                PHP. 
+                                Даже если ты никогда
+                не слышал слова 
+                «программирование» и учишься
+                на филолога, ты можешь 
+                попробовать их сделать.
+                </p>
+
+            <p>Скачивать и устанавливать тоже
+                ничего не надо, делать уроки 
+                можно даже с айпада или 
+                ведроида.</p>
+        </div>
+
+            </div>
+
+    
+    
+    <script type="text/javascript">
+
+        var SCOPE_PAGE_LEVEL = 3;
+
+        window._gaq = window._gaq || [];
+        _gaq.push(['_setAccount', 'UA-34859509-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        
+        /* outbound link click tracking to check whether anyone uses those links */
+        (function() {
+            function startsWith(str, substr) {
+                return str.substr(0, substr.length) == substr;
+            }
+            
+            function addEvent(node, evt, fn) {
+                if (node.addEventListener) {
+                    node.addEventListener(evt, fn, false);
+                } else {
+                    node.attachEvent('on' + evt, fn);
+                }
+            }
+        
+            var links = document.getElementsByTagName('a');
+            var baseUrl = 'http://' + location.host;
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                
+                if (link.href != baseUrl && !startsWith(link.href, baseUrl + '/')) {
+                    // Is an external link
+                    addEvent(link, 'mousedown', function(ev) { 
+                        window._gaq = window._gaq || [];
+                        var e = ev || window.event;
+                        var link = e.target || e.srcElement;
+                        var text = link.innerText || link.textContent || 'no text';
+                        if (text.length > 20) {
+                            text = text.substr(0, 20) + '…';
+                        }
+                        var linkInfo = link.href + ' (' +  text + ')';
+                        window._gaq.push(['_trackEvent', 'flow', 'link', linkInfo]);
+                    });
+                }
+            }
+        })();
+
+        /* poor man's error logger */
+        (function () {
+            var errorsReported = 0;
+            var MAX_ERRORS = 5;
+            
+            window.onerror = function (text, file, line) {
+
+                if (errorsReported > MAX_ERRORS) {
+                    return;
+                }
+
+                errorsReported++;
+
+                window._gaq = window._gaq || [];
+                var errorInfo = (text || '(no text)') + ' @ ' + (file || '(no file)') + 
+                    ', line ' + (line || '(no line)');
+                window._gaq.push(['_trackEvent', 'error', 'onerror', errorInfo]);
+            };
+        })();
+    </script>
+</body>
+</html>
