@@ -151,6 +151,8 @@ table { border-collapse: collapse; width: 100%; margin: 1em 0; }
 /* fix narod compat CSS mode */
 .b-eval__source, .b-eval__result { font-size: 14px; line-height: 20px; }
 
+.b-regexp__source { padding-top: 16px; }
+
 .b-mirror-notice { float: right; margin-right: -250px; width: 200px; margin-top: 15px; 
     font-size: 12px; margin-bottom: 15px; }
 /* временно */
@@ -158,3 +160,14 @@ table { border-collapse: collapse; width: 100%; margin: 1em 0; }
     margin-right: -260px; width: 200px; 
     margin-top: 15px; font-size: 12px; 
     margin-bottom: 15px; background: #ffeaae; padding: 10px; }
+
+.b-big-letter { float: left; background: #e8e8ff;  
+    min-width: 50px; min-height: 50px; line-height: 50px;
+    padding: 5px;
+    color: #111169;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px; text-align: center;
+    margin: 0 15px 5px 0;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
